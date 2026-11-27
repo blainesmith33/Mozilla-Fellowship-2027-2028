@@ -1,0 +1,1966 @@
+{
+  "async_status": null,
+  "atlas_mode_enabled": null,
+  "blocked_urls": [],
+  "context_scopes": null,
+  "context_truncation_continuation": {
+    "boundary_message_id": "8d15b31b-0eca-40c0-b92c-fb084b1c2f4f",
+    "source_conversation_gizmo_id": null,
+    "source_conversation_id": "6b020ab7-6c48-83e8-80d1-57645cfe0e02",
+    "source_conversation_owner_id": "user-5Ah3Jq5MjieLw3Vp9tHTJRDj",
+    "source_conversation_title": "Explain blAIne (3)",
+    "visible_from_message_id": "8d15b31b-0eca-40c0-b92c-fb084b1c2f4f"
+  },
+  "conversation_id": "6b02154e-602c-83e8-ad5d-c5a4fd4acd30",
+  "conversation_origin": null,
+  "conversation_template_id": "g-p-6b08db38f150819193160a1e9a00ac24",
+  "create_time": 1795298639.529092,
+  "current_node": "d821e8d3-6f10-4ffb-ba29-8a6a4fa5170d",
+  "default_model_slug": "auto",
+  "disabled_tool_ids": [],
+  "gizmo_id": "g-p-6b08db38f150819193160a1e9a00ac24",
+  "gizmo_type": "snorlax",
+  "is_archived": false,
+  "is_do_not_remember": false,
+  "is_read_only": null,
+  "is_starred": null,
+  "is_study_mode": false,
+  "is_temporary_chat": false,
+  "mapping": {
+    "01ba496b-3528-4c98-a612-4642a29c6c64": {
+      "children": [
+        "f1301fde-d259-426a-95e1-dfc85d8d9ec1"
+      ],
+      "id": "01ba496b-3528-4c98-a612-4642a29c6c64",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "thoughts",
+          "source_analysis_msg_id": "0a78a500-7e30-43fa-937c-66f34a5104ba",
+          "thoughts": [
+            {
+              "chunks": [],
+              "content": "I’m checking whether the local commit can be recreated remotely without an interactive login. The available path is to upload file contents, build the matching tree and commit, then move the branch reference, though handling many large files may be cumbersome.",
+              "finished": true,
+              "summary": "Assessing GitHub upload"
+            },
+            {
+              "chunks": [],
+              "content": "",
+              "finished": true,
+              "summary": "Assessed GitHub upload"
+            }
+          ]
+        },
+        "create_time": 1795298748.114009,
+        "end_turn": false,
+        "id": "01ba496b-3528-4c98-a612-4642a29c6c64",
+        "metadata": {
+          "can_save": false,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "disable_turn_actions": true,
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "hide_inline_actions": true,
+          "message_type": "next",
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "0a78a500-7e30-43fa-937c-66f34a5104ba",
+          "reasoning_group_id": "c5daf6ee-a383-4b18-96de-7ab8aec7b2b8",
+          "reasoning_start_time": 1795298740.9578702,
+          "reasoning_status": "is_reasoning",
+          "request_id": "5b054803-7dcc-4333-aa0c-c738e316e597",
+          "resolved_model_slug": "gpt-6-mini",
+          "summary_type": "raw_cot",
+          "tool_icons": [],
+          "turn_exchange_id": "dcaab5ba-3052-429e-91f6-3dd674f84589",
+          "turn_id": "c5f6a665-ca05-4811-913e-ecd32f4d8ea7",
+          "working_turn_id": "dcaab5ba-3052-429e-91f6-3dd674f84589"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298762.982616,
+        "weight": 1
+      },
+      "parent": "b2529115-20f6-441f-a96c-25c6dd025e66"
+    },
+    "16d4d470-c949-427c-8b49-d0c611ceb6e6": {
+      "children": [
+        "521fcdb8-b6d3-4ac5-868d-8bf3eb26f1e5"
+      ],
+      "id": "16d4d470-c949-427c-8b49-d0c611ceb6e6",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Staging is correct: **18 new files, 123,585 insertions**, with no other changes shown in Git status.\n\nCommit these as a standalone archival addition:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\ngit commit -m \"Add original KGI raw chat exports\"\n```\n\nThis creates a local commit only; it does not push to GitHub. After it succeeds, we'll verify the commit and repository status before pushing."
+          ]
+        },
+        "create_time": 1795298667.908833,
+        "end_turn": true,
+        "id": "16d4d470-c949-427c-8b49-d0c611ceb6e6",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "code_blocks": {
+            "0": {
+              "edited": false,
+              "id": "own55h",
+              "preview_language": null,
+              "previewable": false
+            }
+          },
+          "content_references": [
+            {
+              "alt": null,
+              "category": "code_block",
+              "data": {
+                "content": "cd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\ngit commit -m \"Add original KGI raw chat exports\"",
+                "language": "bash",
+                "widget_type": "code_block"
+              },
+              "end_idx": 306,
+              "matched_text": "```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\ngit commit -m \"Add original KGI raw chat exports\"\n```",
+              "prompt_text": null,
+              "refs": [],
+              "safe_urls": [],
+              "start_idx": 152,
+              "type": "client_defined_widget"
+            }
+          ],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "clientDefinedWidgets": {
+              "1bd51f23-7361-5edf-b9b1-6ddb3242bd5d": {
+                "isStreaming": false,
+                "refIndex": 0,
+                "status": "resolved"
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"],__dil.jsx(\"bold\",null,__dilConstants[\"1\"]),__dilConstants[\"2\"]),__dil.jsx(\"text\",null,__dilConstants[\"3\"]),(__dilConstants[\"5\"]==null?__dil.jsx(\"__chatgptClientDefinedWidget\",{\"key\":\"cdw:0\",\"invocationId\":__dilConstants[\"4\"]}):__dilConstants[\"5\"].type===\"math\"?__dil.jsx(\"math\",{\"key\":\"cdw:0\",\"value\":__dilConstants[\"5\"].value}):__dilConstants[\"5\"].type===\"text\"?__dil.jsx(\"text\",{\"key\":\"cdw:0\"},__dilConstants[\"5\"].value):null),__dil.jsx(\"text\",null,__dilConstants[\"6\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Staging is correct: ",
+              "1": "18 new files, 123,585 insertions",
+              "2": ", with no other changes shown in Git status.",
+              "3": "Commit these as a standalone archival addition:",
+              "4": "1bd51f23-7361-5edf-b9b1-6ddb3242bd5d",
+              "5": null,
+              "6": "This creates a local commit only; it does not push to GitHub. After it succeeds, we'll verify the commit and repository status before pushing."
+            },
+            "fallbackMarkdown": "Staging is correct: **18 new files, 123,585 insertions**, with no other changes shown in Git status.\n\nCommit these as a standalone archival addition\\:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\ngit commit -m \"Add original KGI raw chat exports\"\n```\n\nThis creates a local commit only; it does not push to GitHub. After it succeeds, we'll verify the commit and repository status before pushing.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "b9f494c5-60ec-4a43-a356-2fb61bf18add",
+          "request_id": "5f9028ea-fbb9-451d-84c0-cf034e25b404",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "a6f954c1-6c41-42d5-ac47-a1df9713626c",
+          "turn_id": "b6a2bbd2-0835-4505-9af9-3e09ecd23ced",
+          "view_state": {},
+          "working_turn_id": "a6f954c1-6c41-42d5-ac47-a1df9713626c"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298673.553558,
+        "weight": 1
+      },
+      "parent": "465d7182-47f6-4d88-863a-47f11dfeeefc"
+    },
+    "2c3d15f3-aeff-4e24-ba77-2f280ec006aa": {
+      "children": [
+        "87655523-9011-402e-825c-5dc3a2ff6f5d"
+      ],
+      "id": "2c3d15f3-aeff-4e24-ba77-2f280ec006aa",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "NO, THAT ASKS ME TO FUCKING LOG. ARE YOU FUCKING RETARDED? is it possible to push the fucking raw chats to my github or not?"
+          ]
+        },
+        "create_time": 1795298892.45,
+        "end_turn": null,
+        "id": "2c3d15f3-aeff-4e24-ba77-2f280ec006aa",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "ffa5c77d-46fc-4086-a6c4-3d8667455d7f",
+          "turn_exchange_id": "d08e4c9c-70a6-44b6-8772-e3b8d027c430",
+          "turn_id": "54766ab2-701b-519f-8547-2a22ff037417",
+          "working_turn_id": "d08e4c9c-70a6-44b6-8772-e3b8d027c430"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298898.053494,
+        "weight": 1
+      },
+      "parent": "e9bc70ca-74fb-4274-98f4-a6a94e3d2fa7"
+    },
+    "322511d3-f73d-4f0a-9d0e-77ce0e04e957": {
+      "children": [
+        "3b1087f1-91f4-4c41-af30-91a314eb259c"
+      ],
+      "id": "322511d3-f73d-4f0a-9d0e-77ce0e04e957",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. You want the 18 documents in your existing local commit uploaded to your existing GitHub repository, `blainesmith33/knowledge-governance-infrastructure`, without logging into GitHub through Konsole.\n\nI made this unnecessarily complicated. **The destination is GitHub. The task is to publish those documents.**\n\nI can use your connected GitHub integration, but it cannot execute a normal Git push or read files directly from your Steam Deck. I cannot honestly claim I can transfer those local files through that connection without first obtaining their contents.\n\nThe practical route that avoids Konsole authentication is to use GitHub's website to upload the folder. Your existing local commit can remain intact; we do not need to recreate the archive."
+          ]
+        },
+        "create_time": 1795298814.085019,
+        "end_turn": true,
+        "id": "322511d3-f73d-4f0a-9d0e-77ce0e04e957",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"],__dil.jsx(\"code\",null,__dilConstants[\"1\"]),__dilConstants[\"2\"]),__dil.jsx(\"text\",null,__dilConstants[\"3\"],__dil.jsx(\"bold\",null,__dilConstants[\"4\"])),__dil.jsx(\"text\",null,__dilConstants[\"5\"]),__dil.jsx(\"text\",null,__dilConstants[\"6\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Understood. You want the 18 documents in your existing local commit uploaded to your existing GitHub repository, ",
+              "1": "blainesmith33/knowledge-governance-infrastructure",
+              "2": ", without logging into GitHub through Konsole.",
+              "3": "I made this unnecessarily complicated. ",
+              "4": "The destination is GitHub. The task is to publish those documents.",
+              "5": "I can use your connected GitHub integration, but it cannot execute a normal Git push or read files directly from your Steam Deck. I cannot honestly claim I can transfer those local files through that connection without first obtaining their contents.",
+              "6": "The practical route that avoids Konsole authentication is to use GitHub's website to upload the folder. Your existing local commit can remain intact; we do not need to recreate the archive."
+            },
+            "fallbackMarkdown": "Understood. You want the 18 documents in your existing local commit uploaded to your existing GitHub repository, `blainesmith33/knowledge-governance-infrastructure`, without logging into GitHub through Konsole.\n\nI made this unnecessarily complicated. **The destination is GitHub. The task is to publish those documents.**\n\nI can use your connected GitHub integration, but it cannot execute a normal Git push or read files directly from your Steam Deck. I cannot honestly claim I can transfer those local files through that connection without first obtaining their contents.\n\nThe practical route that avoids Konsole authentication is to use GitHub's website to upload the folder. Your existing local commit can remain intact; we do not need to recreate the archive.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "f0ad77c8-ff23-4efe-997e-55e1f4efe040",
+          "request_id": "3b15afa1-4cc0-4558-b2b5-380e51b18f2a",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "0b6a5da5-4138-489d-8be4-ff71ebf37933",
+          "turn_id": "955146f2-fc53-4978-836e-37eb9a76413e",
+          "view_state": {},
+          "working_turn_id": "0b6a5da5-4138-489d-8be4-ff71ebf37933"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298817.112852,
+        "weight": 1
+      },
+      "parent": "f2ad6458-0874-413c-b68d-ef5a136d5056"
+    },
+    "33ecdc6e-f4e2-411c-b69f-f85aa917d933": {
+      "children": [
+        "3995e72e-37fa-473a-bd16-a78ca77c7edb"
+      ],
+      "id": "33ecdc6e-f4e2-411c-b69f-f85aa917d933",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": null,
+        "content": {
+          "content": "Worked for 6s",
+          "content_type": "reasoning_recap"
+        },
+        "create_time": 1795298646.655279,
+        "end_turn": false,
+        "id": "33ecdc6e-f4e2-411c-b69f-f85aa917d933",
+        "metadata": {
+          "can_save": false,
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "disable_turn_actions": true,
+          "finished_duration_sec": 6,
+          "hide_inline_actions": true,
+          "message_type": "next",
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "6b49cb07-e2de-400e-93d6-e22e8d101fa9",
+          "reasoning_end_time": 1795298646.6452563,
+          "reasoning_group_id": "3028e4c6-e0a5-4922-8f74-37fff5abc7e0",
+          "reasoning_recap_type": "hide_all",
+          "reasoning_start_time": 1795298640.4778054,
+          "reasoning_status": "reasoning_ended",
+          "request_id": "1f4357f6-532e-4978-9212-a21b33f91ae0",
+          "resolved_model_slug": "gpt-6-mini",
+          "turn_exchange_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622",
+          "turn_id": "ec330b44-5e27-4844-a202-2525b00313a4",
+          "working_turn_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298646.655279,
+        "weight": 1
+      },
+      "parent": "6b49cb07-e2de-400e-93d6-e22e8d101fa9"
+    },
+    "3995e72e-37fa-473a-bd16-a78ca77c7edb": {
+      "children": [
+        "465d7182-47f6-4d88-863a-47f11dfeeefc"
+      ],
+      "id": "3995e72e-37fa-473a-bd16-a78ca77c7edb",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "<badge color=\"success\">Copy verified</badge>\n\nAll **18 files** were copied successfully and verified identical to their source files. No existing files were overwritten.\n\nGit reports exactly one untracked addition:\n\n```text\n?? raw_chats/source_exports/\n```\n\nThat is the expected result. The new exports are in place, and the existing 15-file `raw_chats/incoming/` collection remains untouched.\n\nThe next step is to stage the new exports and inspect exactly what Git will include. This does not commit or push anything yet.\n\nRun from the repository:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI STAGING =====\"\n\ngit add raw_chats/source_exports/\n\necho\necho \"STAGED CHANGE SUMMARY:\"\ngit diff --cached --stat\n\necho\necho \"STAGED FILE COUNT:\"\ngit diff --cached --name-only | wc -l\n\necho\necho \"GIT STATUS:\"\ngit status --short\n\necho\necho \"===== END KGI STAGING =====\"\n```\n\nWe should see 18 newly staged files. Once confirmed, we can commit them as a distinct raw-chat archive addition."
+          ]
+        },
+        "create_time": 1795298641.019235,
+        "end_turn": true,
+        "id": "3995e72e-37fa-473a-bd16-a78ca77c7edb",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "code_blocks": {
+            "0": {
+              "edited": false,
+              "id": "6pgvzz",
+              "preview_language": null,
+              "previewable": false
+            },
+            "1": {
+              "edited": false,
+              "id": "27hnbm",
+              "preview_language": null,
+              "previewable": false
+            }
+          },
+          "content_references": [
+            {
+              "alt": null,
+              "category": "code_block",
+              "data": {
+                "content": "?? raw_chats/source_exports/",
+                "language": "text",
+                "widget_type": "code_block"
+              },
+              "end_idx": 228,
+              "matched_text": "```text\n?? raw_chats/source_exports/\n```",
+              "prompt_text": null,
+              "refs": [],
+              "safe_urls": [],
+              "start_idx": 188,
+              "type": "client_defined_widget"
+            },
+            {
+              "alt": null,
+              "category": "code_block",
+              "data": {
+                "content": "cd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI STAGING =====\"\n\ngit add raw_chats/source_exports/\n\necho\necho \"STAGED CHANGE SUMMARY:\"\ngit diff --cached --stat\n\necho\necho \"STAGED FILE COUNT:\"\ngit diff --cached --name-only | wc -l\n\necho\necho \"GIT STATUS:\"\ngit status --short\n\necho\necho \"===== END KGI STAGING =====\"",
+                "language": "bash",
+                "widget_type": "code_block"
+              },
+              "end_idx": 915,
+              "matched_text": "```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI STAGING =====\"\n\ngit add raw_chats/source_exports/\n\necho\necho \"STAGED CHANGE SUMMARY:\"\ngit diff --cached --stat\n\necho\necho \"STAGED FILE COUNT:\"\ngit diff --cached --name-only | wc -l\n\necho\necho \"GIT STATUS:\"\ngit status --short\n\necho\necho \"===== END KGI STAGING =====\"\n```",
+              "prompt_text": null,
+              "refs": [],
+              "safe_urls": [],
+              "start_idx": 523,
+              "type": "client_defined_widget"
+            }
+          ],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "clientDefinedWidgets": {
+              "0085cd3a-c9fa-5659-be06-63f81a3f13aa": {
+                "isStreaming": false,
+                "refIndex": 1,
+                "status": "resolved"
+              },
+              "89d62890-687f-5f3f-8600-b482007b02e0": {
+                "isStreaming": false,
+                "refIndex": 0,
+                "status": "resolved"
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"badge\",{\"color\":\"success\"},__dilConstants[\"0\"]),__dil.jsx(\"text\",null,__dilConstants[\"1\"],__dil.jsx(\"bold\",null,__dilConstants[\"2\"]),__dilConstants[\"3\"]),__dil.jsx(\"text\",null,__dilConstants[\"4\"]),(__dilConstants[\"6\"]==null?__dil.jsx(\"__chatgptClientDefinedWidget\",{\"key\":\"cdw:0\",\"invocationId\":__dilConstants[\"5\"]}):__dilConstants[\"6\"].type===\"math\"?__dil.jsx(\"math\",{\"key\":\"cdw:0\",\"value\":__dilConstants[\"6\"].value}):__dilConstants[\"6\"].type===\"text\"?__dil.jsx(\"text\",{\"key\":\"cdw:0\"},__dilConstants[\"6\"].value):null),__dil.jsx(\"text\",null,__dilConstants[\"7\"],__dil.jsx(\"code\",null,__dilConstants[\"8\"]),__dilConstants[\"9\"]),__dil.jsx(\"text\",null,__dilConstants[\"10\"]),__dil.jsx(\"text\",null,__dilConstants[\"11\"]),(__dilConstants[\"13\"]==null?__dil.jsx(\"__chatgptClientDefinedWidget\",{\"key\":\"cdw:1\",\"invocationId\":__dilConstants[\"12\"]}):__dilConstants[\"13\"].type===\"math\"?__dil.jsx(\"math\",{\"key\":\"cdw:1\",\"value\":__dilConstants[\"13\"].value}):__dilConstants[\"13\"].type===\"text\"?__dil.jsx(\"text\",{\"key\":\"cdw:1\"},__dilConstants[\"13\"].value):null),__dil.jsx(\"text\",null,__dilConstants[\"14\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Copy verified",
+              "1": "All ",
+              "2": "18 files",
+              "3": " were copied successfully and verified identical to their source files. No existing files were overwritten.",
+              "4": "Git reports exactly one untracked addition:",
+              "5": "89d62890-687f-5f3f-8600-b482007b02e0",
+              "6": null,
+              "7": "That is the expected result. The new exports are in place, and the existing 15-file ",
+              "8": "raw_chats/incoming/",
+              "9": " collection remains untouched.",
+              "10": "The next step is to stage the new exports and inspect exactly what Git will include. This does not commit or push anything yet.",
+              "11": "Run from the repository:",
+              "12": "0085cd3a-c9fa-5659-be06-63f81a3f13aa",
+              "13": null,
+              "14": "We should see 18 newly staged files. Once confirmed, we can commit them as a distinct raw-chat archive addition."
+            },
+            "fallbackMarkdown": "(Copy verified)\n\nAll **18 files** were copied successfully and verified identical to their source files. No existing files were overwritten.\n\nGit reports exactly one untracked addition\\:\n\n```text\n?? raw_chats/source_exports/\n```\n\nThat is the expected result. The new exports are in place, and the existing 15-file `raw_chats/incoming/` collection remains untouched.\n\nThe next step is to stage the new exports and inspect exactly what Git will include. This does not commit or push anything yet.\n\nRun from the repository\\:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI STAGING =====\"\n\ngit add raw_chats/source_exports/\n\necho\necho \"STAGED CHANGE SUMMARY:\"\ngit diff --cached --stat\n\necho\necho \"STAGED FILE COUNT:\"\ngit diff --cached --name-only | wc -l\n\necho\necho \"GIT STATUS:\"\ngit status --short\n\necho\necho \"===== END KGI STAGING =====\"\n```\n\nWe should see 18 newly staged files. Once confirmed, we can commit them as a distinct raw-chat archive addition.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "33ecdc6e-f4e2-411c-b69f-f85aa917d933",
+          "request_id": "1f4357f6-532e-4978-9212-a21b33f91ae0",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622",
+          "turn_id": "ec330b44-5e27-4844-a202-2525b00313a4",
+          "view_state": {},
+          "working_turn_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298655.257693,
+        "weight": 1
+      },
+      "parent": "33ecdc6e-f4e2-411c-b69f-f85aa917d933"
+    },
+    "3b1087f1-91f4-4c41-af30-91a314eb259c": {
+      "children": [
+        "e9bc70ca-74fb-4274-98f4-a6a94e3d2fa7"
+      ],
+      "id": "3b1087f1-91f4-4c41-af30-91a314eb259c",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "GIVE ME THE FUCKING COMMAND TO PUSH THE FUCKING RAW CHATS i JUST EXTRACTED TO MY FUCKING KGI REPO. FUCK!"
+          ]
+        },
+        "create_time": 1795298847.72,
+        "end_turn": null,
+        "id": "3b1087f1-91f4-4c41-af30-91a314eb259c",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "6f60d988-21d9-4067-a20a-cf64367575d0",
+          "turn_exchange_id": "ddb8275c-91c3-4084-87e4-50958cddca4f",
+          "turn_id": "b38e0395-5f8d-50dd-bd4d-fa954c1f66b8",
+          "working_turn_id": "ddb8275c-91c3-4084-87e4-50958cddca4f"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298851.278864,
+        "weight": 1
+      },
+      "parent": "322511d3-f73d-4f0a-9d0e-77ce0e04e957"
+    },
+    "465d7182-47f6-4d88-863a-47f11dfeeefc": {
+      "children": [
+        "16d4d470-c949-427c-8b49-d0c611ceb6e6"
+      ],
+      "id": "465d7182-47f6-4d88-863a-47f11dfeeefc",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\\===== BEGIN KGI STAGING ===== \\\n&#x20;\\\nSTAGED CHANGE SUMMARY: \\\n&#x20;.../Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.md           |  6616 +++++++++++++++ \\\n&#x20;.../Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.raw\\.json     |  9969 +++++++++++++++++++++++ \\\n&#x20;.../Chat Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.md    | 10033 +++++++++++++++++++++++ \\\n&#x20;...at Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.raw\\.json | 11848 +++++++++++++++++++++++++++ \\\n&#x20;.../KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.md         |   775 ++ \\\n&#x20;.../KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.raw\\.json   |   403 + \\\n&#x20;.../KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.md        |  4546 +++++++++++ \\\n&#x20;.../KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.raw\\.json  |  7377 +++++++++++++++++ \\\n&#x20;.../KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.md          |  4341 ++++++++++ \\\n&#x20;.../KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.raw\\.json    | 13680 ++++++++++++++++++++++++++++++++ \\\n&#x20;.../KGI Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.md   |  7452 +++++++++++++++++ \\\n&#x20;... Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.raw\\.json |  7942 ++++++++++++++++++ \\\n&#x20;.../KGI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.md     |  3532 +++++++++ \\\n&#x20;...GI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.raw\\.json |  6893 ++++++++++++++++ \\\n&#x20;.../KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.md          |   953 +++ \\\n&#x20;.../KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.raw\\.json    |  4940 ++++++++++++ \\\n&#x20;.../MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.md           | 10778 +++++++++++++++++++++++++ \\\n&#x20;.../MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.raw\\.json     | 11507 +++++++++++++++++++++++++++ \\\n&#x20;18 files changed, 123585 insertions(+) \\\n&#x20;\\\nSTAGED FILE COUNT: \\\n18 \\\n&#x20;\\\nGIT STATUS: \\\nA  \"raw_chats/source_exports/Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.md\" \\\nA  \"raw_chats/source_exports/Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.raw\\.json\" \\\nA  \"raw_chats/source_exports/Chat Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.md\" \\\nA  \"raw_chats/source_exports/Chat Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.raw\\.json\" \\\nA  \"raw_chats/source_exports/KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.md\" \\\nA  \"raw_chats/source_exports/KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.raw\\.json\" \\\nA  \"raw_chats/source_exports/KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.md\" \\\nA  \"raw_chats/source_exports/KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.raw\\.json\" \\\nA  \"raw_chats/source_exports/KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.md\" \\\nA  \"raw_chats/source_exports/KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.raw\\.json\" \\\nA  \"raw_chats/source_exports/KGI Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.md\" \\\nA  \"raw_chats/source_exports/KGI Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.raw\\.json\" \\\nA  \"raw_chats/source_exports/KGI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.md\" \\\nA  \"raw_chats/source_exports/KGI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.raw\\.json\" \\\nA  \"raw_chats/source_exports/KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.md\" \\\nA  \"raw_chats/source_exports/KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.raw\\.json\" \\\nA  \"raw_chats/source_exports/MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.md\" \\\nA  \"raw_chats/source_exports/MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.raw\\.json\" \\\n&#x20;\\\n\\===== END KGI STAGING ===== \\\n(**deck@ExosSteamDeck knowledge-governance-infrastructure**)$ \\\n&#x20;\\\n&#x20;"
+          ]
+        },
+        "create_time": 1795298665.291,
+        "end_turn": null,
+        "id": "465d7182-47f6-4d88-863a-47f11dfeeefc",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "5f9028ea-fbb9-451d-84c0-cf034e25b404",
+          "serialization_metadata": {
+            "render_format": "markdown"
+          },
+          "turn_exchange_id": "a6f954c1-6c41-42d5-ac47-a1df9713626c",
+          "turn_id": "187d66c9-7c41-5408-9944-5e564bc169be",
+          "working_turn_id": "a6f954c1-6c41-42d5-ac47-a1df9713626c"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298691.918056,
+        "weight": 1
+      },
+      "parent": "3995e72e-37fa-473a-bd16-a78ca77c7edb"
+    },
+    "521fcdb8-b6d3-4ac5-868d-8bf3eb26f1e5": {
+      "children": [
+        "d9bb8235-f064-4324-8685-6413f3ad6dbe"
+      ],
+      "id": "521fcdb8-b6d3-4ac5-868d-8bf3eb26f1e5",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "(**deck@ExosSteamDeck knowledge-governance-infrastructure**)$ cd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/kn\\\nowledge-governance-infrastructure \\\n&#x20;\\\ngit commit -m \"Add original KGI raw chat exports\" \\\n[main 2da9516] Add original KGI raw chat exports \\\n&#x20;18 files changed, 123585 insertions(+) \\\n&#x20;create mode 100644 raw_chats/source_exports/Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.md \\\n&#x20;create mode 100644 raw_chats/source_exports/Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.raw\\.json \\\n&#x20;create mode 100644 raw_chats/source_exports/Chat Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.md \\\n&#x20;create mode 100644 raw_chats/source_exports/Chat Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.raw\\.jso\\\nn \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.md \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.raw\\.json \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.md \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.raw\\.json \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.md \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.raw\\.json \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.md \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.raw\\.js\\\non \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.md \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.raw\\.json \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.md \\\n&#x20;create mode 100644 raw_chats/source_exports/KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.raw\\.json \\\n&#x20;create mode 100644 raw_chats/source_exports/MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.md \\\n&#x20;create mode 100644 raw_chats/source_exports/MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.raw\\.json \\\n(**deck@ExosSteamDeck knowledge-governance-infrastructure**)$ \\\n&#x20;\\\n&#x20;"
+          ]
+        },
+        "create_time": 1795298685.408,
+        "end_turn": null,
+        "id": "521fcdb8-b6d3-4ac5-868d-8bf3eb26f1e5",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "0e6b4901-af1b-4b33-845b-91f0c90c676f",
+          "serialization_metadata": {
+            "render_format": "markdown"
+          },
+          "turn_exchange_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b",
+          "turn_id": "c1f667cb-7b65-5f95-92ac-f92a231950df",
+          "working_turn_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298705.504777,
+        "weight": 1
+      },
+      "parent": "16d4d470-c949-427c-8b49-d0c611ceb6e6"
+    },
+    "5a3328ca-61d7-452c-a2e6-f8d2a1959e77": {
+      "children": [
+        "6b49cb07-e2de-400e-93d6-e22e8d101fa9"
+      ],
+      "id": "5a3328ca-61d7-452c-a2e6-f8d2a1959e77",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\\===== BEGIN KGI RAW CHAT VERIFICATION ===== \\\n&#x20;\\\nIDENTICAL FILES: 18 \\\nFAILED FILES: 0 \\\n&#x20;\\\nGIT STATUS: \\\n?? raw_chats/source_exports/ \\\n&#x20;\\\n\\===== END KGI RAW CHAT VERIFICATION ===== \\\n(**deck@ExosSteamDeck chat_archive_extractor**)$  \\\n&#x20;\\\n&#x20;\\\n&#x20;\\\n&#x20;\\\n&#x20;\\\n&#x20;\\\n&#x20;\\\n&#x20;\\\n&#x20;\\\n\\\n&#x20;\\\n&#x20;"
+          ]
+        },
+        "create_time": 1795298638.365,
+        "end_turn": null,
+        "id": "5a3328ca-61d7-452c-a2e6-f8d2a1959e77",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "1f4357f6-532e-4978-9212-a21b33f91ae0",
+          "serialization_metadata": {
+            "render_format": "markdown"
+          },
+          "turn_exchange_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622",
+          "turn_id": "bc2fd6e9-e0cb-576c-8858-acc241f233e0",
+          "working_turn_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298661.381276,
+        "weight": 1
+      },
+      "parent": "8d15b31b-0eca-40c0-b92c-fb084b1c2f4f"
+    },
+    "60a45eb4-398b-4608-b38a-0bd09901ae9f": {
+      "children": [
+        "e89ed17c-cefc-47ab-8379-5197f729c697"
+      ],
+      "id": "60a45eb4-398b-4608-b38a-0bd09901ae9f",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Correct. You should not need to authenticate separately in Konsole if the existing GitHub connection can publish the commit on your behalf.\n\nThe local commit is already complete. The remaining operation is pushing `main` to `origin/main`. I can check whether the connected GitHub integration can perform that push, rather than asking you to log in through the terminal.You're right that the GitHub account is already connected to ChatGPT, and I should use that authorization where possible.\n\nThere is one technical distinction: the GitHub integration can create files, Git objects, and commits through GitHub's API, but it does not expose a direct `git push` operation. Your commit `2da9516` currently exists only in the local repository. GitHub cannot advance `main` to that commit until its underlying Git objects are uploaded.\n\nI won't ask you to log in through Konsole. The remaining challenge is transferring the 18 local files through the connected GitHub integration while preserving the archive and commit history."
+          ]
+        },
+        "create_time": 1795298741.541555,
+        "end_turn": true,
+        "id": "60a45eb4-398b-4608-b38a-0bd09901ae9f",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"]),__dil.jsx(\"text\",null,__dilConstants[\"1\"],__dil.jsx(\"code\",null,__dilConstants[\"2\"]),__dilConstants[\"3\"],__dil.jsx(\"code\",null,__dilConstants[\"4\"]),__dilConstants[\"5\"]),__dil.jsx(\"text\",null,__dilConstants[\"6\"],__dil.jsx(\"code\",null,__dilConstants[\"7\"]),__dilConstants[\"8\"],__dil.jsx(\"code\",null,__dilConstants[\"9\"]),__dilConstants[\"10\"],__dil.jsx(\"code\",null,__dilConstants[\"11\"]),__dilConstants[\"12\"]),__dil.jsx(\"text\",null,__dilConstants[\"13\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Correct. You should not need to authenticate separately in Konsole if the existing GitHub connection can publish the commit on your behalf.",
+              "1": "The local commit is already complete. The remaining operation is pushing ",
+              "2": "main",
+              "3": " to ",
+              "4": "origin/main",
+              "5": ". I can check whether the connected GitHub integration can perform that push, rather than asking you to log in through the terminal.You're right that the GitHub account is already connected to ChatGPT, and I should use that authorization where possible.",
+              "6": "There is one technical distinction: the GitHub integration can create files, Git objects, and commits through GitHub's API, but it does not expose a direct ",
+              "7": "git push",
+              "8": " operation. Your commit ",
+              "9": "2da9516",
+              "10": " currently exists only in the local repository. GitHub cannot advance ",
+              "11": "main",
+              "12": " to that commit until its underlying Git objects are uploaded.",
+              "13": "I won't ask you to log in through Konsole. The remaining challenge is transferring the 18 local files through the connected GitHub integration while preserving the archive and commit history."
+            },
+            "fallbackMarkdown": "Correct. You should not need to authenticate separately in Konsole if the existing GitHub connection can publish the commit on your behalf.\n\nThe local commit is already complete. The remaining operation is pushing `main` to `origin/main`\\. I can check whether the connected GitHub integration can perform that push, rather than asking you to log in through the terminal.You're right that the GitHub account is already connected to ChatGPT, and I should use that authorization where possible.\n\nThere is one technical distinction: the GitHub integration can create files, Git objects, and commits through GitHub's API, but it does not expose a direct `git push` operation. Your commit `2da9516` currently exists only in the local repository. GitHub cannot advance `main` to that commit until its underlying Git objects are uploaded.\n\nI won't ask you to log in through Konsole. The remaining challenge is transferring the 18 local files through the connected GitHub integration while preserving the archive and commit history.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "81eda956-d7bc-4145-9a2e-f4327f5f3ce4",
+          "request_id": "5b054803-7dcc-4333-aa0c-c738e316e597",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "dcaab5ba-3052-429e-91f6-3dd674f84589",
+          "turn_id": "c5f6a665-ca05-4811-913e-ecd32f4d8ea7",
+          "view_state": {},
+          "working_turn_id": "dcaab5ba-3052-429e-91f6-3dd674f84589"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298765.316411,
+        "weight": 1
+      },
+      "parent": "81eda956-d7bc-4145-9a2e-f4327f5f3ce4"
+    },
+    "61241b8d-5a88-48ea-8943-e77706da9f7f": {
+      "children": [
+        "8d15b31b-0eca-40c0-b92c-fb084b1c2f4f"
+      ],
+      "id": "61241b8d-5a88-48ea-8943-e77706da9f7f",
+      "message": null,
+      "parent": null
+    },
+    "68f7e785-74de-4ad2-b8bc-46f6de1981ab": {
+      "children": [
+        "d821e8d3-6f10-4ffb-ba29-8a6a4fa5170d"
+      ],
+      "id": "68f7e785-74de-4ad2-b8bc-46f6de1981ab",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I HAVE A FUCKING SSH SET UP WITH GITHUB, i DONT GIVE A FUCK WHAT YOU'RE CAPABLE OF DOING"
+          ]
+        },
+        "create_time": 1795298926.673,
+        "end_turn": null,
+        "id": "68f7e785-74de-4ad2-b8bc-46f6de1981ab",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "2afccf72-5feb-4d52-86b7-ae0af77548bf",
+          "turn_exchange_id": "36fb7755-d452-4933-b066-a889f4c70a51",
+          "turn_id": "826ada86-1075-5bf9-860e-568deac26b85",
+          "working_turn_id": "36fb7755-d452-4933-b066-a889f4c70a51"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298930.364601,
+        "weight": 1
+      },
+      "parent": "87655523-9011-402e-825c-5dc3a2ff6f5d"
+    },
+    "6b3adf4a-e6e9-4c21-9e03-c0ad96e2266c": {
+      "children": [
+        "7746c0e2-fcfc-4493-9502-3524a482d47e"
+      ],
+      "id": "6b3adf4a-e6e9-4c21-9e03-c0ad96e2266c",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\\===== BEGIN KGI COMMIT VERIFICATION ===== \\\n2da9516 (**HEAD** -> **main**) Add original KGI raw chat exports \\\n&#x20;\\\n&#x20;\\\n\\* main                                          2da9516 [origin/main: ahead 1] Add original KGI raw chat exports \\\n&#x20; reconcile/chat-sorter-implementation-20260825 5f8e3c7 [origin/reconcile/chat-sorter-implementation-20260825] Align\\\n&#x20;lifecycle lineage validation with schemas \\\n&#x20;\\\n\\===== END KGI COMMIT VERIFICATION ===== \\\n(**deck@ExosSteamDeck knowledge-governance-infrastructure**)$ \\\n&#x20;\\\n&#x20;"
+          ]
+        },
+        "create_time": 1795298708.041,
+        "end_turn": null,
+        "id": "6b3adf4a-e6e9-4c21-9e03-c0ad96e2266c",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "685c034b-a6b3-46a1-b831-eeda8a2b917c",
+          "serialization_metadata": {
+            "render_format": "markdown"
+          },
+          "turn_exchange_id": "f3555cae-e482-48a0-b33a-c0c61519def6",
+          "turn_id": "e88010b8-46b2-5cf8-aac7-3f4ddb943d97",
+          "working_turn_id": "f3555cae-e482-48a0-b33a-c0c61519def6"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298730.405403,
+        "weight": 1
+      },
+      "parent": "f1c2acf8-a7b0-4f87-b396-9d01e6615065"
+    },
+    "6b49cb07-e2de-400e-93d6-e22e8d101fa9": {
+      "children": [
+        "33ecdc6e-f4e2-411c-b69f-f85aa917d933"
+      ],
+      "id": "6b49cb07-e2de-400e-93d6-e22e8d101fa9",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "thoughts",
+          "source_analysis_msg_id": "6ffe7eb9-2afe-4b61-b350-ca7e1cd19bab",
+          "thoughts": [
+            {
+              "chunks": [],
+              "content": "I’m checking the current diff before staging anything. Once the new files look correct, I’ll stage them and prepare a commit; I’m holding off on committing until that review is complete.",
+              "finished": true,
+              "summary": "Reviewing repository changes"
+            },
+            {
+              "chunks": [],
+              "content": "",
+              "finished": true,
+              "summary": "Reviewed repository changes"
+            }
+          ]
+        },
+        "create_time": 1795298646.282704,
+        "end_turn": false,
+        "id": "6b49cb07-e2de-400e-93d6-e22e8d101fa9",
+        "metadata": {
+          "can_save": false,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "disable_turn_actions": true,
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "hide_inline_actions": true,
+          "message_type": "next",
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "6ffe7eb9-2afe-4b61-b350-ca7e1cd19bab",
+          "reasoning_group_id": "3028e4c6-e0a5-4922-8f74-37fff5abc7e0",
+          "reasoning_start_time": 1795298640.4778054,
+          "reasoning_status": "is_reasoning",
+          "request_id": "1f4357f6-532e-4978-9212-a21b33f91ae0",
+          "resolved_model_slug": "gpt-6-mini",
+          "summary_type": "raw_cot",
+          "tool_icons": [],
+          "turn_exchange_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622",
+          "turn_id": "ec330b44-5e27-4844-a202-2525b00313a4",
+          "working_turn_id": "e25c951d-f6b2-4c8a-acee-e8e041a35622"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298646.661975,
+        "weight": 1
+      },
+      "parent": "5a3328ca-61d7-452c-a2e6-f8d2a1959e77"
+    },
+    "6b5a5006-bf56-4b9c-b34f-ba5a33dcfe2c": {
+      "children": [
+        "f1c2acf8-a7b0-4f87-b396-9d01e6615065"
+      ],
+      "id": "6b5a5006-bf56-4b9c-b34f-ba5a33dcfe2c",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": null,
+        "content": {
+          "content": "Worked for 5s",
+          "content_type": "reasoning_recap"
+        },
+        "create_time": 1795298694.434391,
+        "end_turn": false,
+        "id": "6b5a5006-bf56-4b9c-b34f-ba5a33dcfe2c",
+        "metadata": {
+          "can_save": false,
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "disable_turn_actions": true,
+          "finished_duration_sec": 5,
+          "hide_inline_actions": true,
+          "message_type": "next",
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "d9bb8235-f064-4324-8685-6413f3ad6dbe",
+          "reasoning_end_time": 1795298692.0044568,
+          "reasoning_group_id": "3ef3443e-1ccf-4272-95cd-4468a3272bb8",
+          "reasoning_recap_type": "hide_all",
+          "reasoning_start_time": 1795298686.6808176,
+          "reasoning_status": "reasoning_ended",
+          "request_id": "0e6b4901-af1b-4b33-845b-91f0c90c676f",
+          "resolved_model_slug": "gpt-6-mini",
+          "turn_exchange_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b",
+          "turn_id": "9dffd85b-0d8a-4f2a-8322-e8ab35320d7d",
+          "working_turn_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298694.434391,
+        "weight": 1
+      },
+      "parent": "d9bb8235-f064-4324-8685-6413f3ad6dbe"
+    },
+    "7746c0e2-fcfc-4493-9502-3524a482d47e": {
+      "children": [
+        "b2529115-20f6-441f-a96c-25c6dd025e66"
+      ],
+      "id": "7746c0e2-fcfc-4493-9502-3524a482d47e",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Verification is clean. The empty `git status --short` confirms there are no uncommitted changes. The `main` branch is exactly **one commit ahead of `origin/main`**.\n\nPush the commit:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI PUSH =====\"\ngit push origin main\necho \"===== END KGI PUSH =====\"\n```\n\nThis publishes the new raw-chat archive commit to the existing GitHub repository. It does not modify the other branch."
+          ]
+        },
+        "create_time": 1795298711.404837,
+        "end_turn": true,
+        "id": "7746c0e2-fcfc-4493-9502-3524a482d47e",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "code_blocks": {
+            "0": {
+              "edited": false,
+              "id": "vt617n",
+              "preview_language": null,
+              "previewable": false
+            }
+          },
+          "content_references": [
+            {
+              "alt": null,
+              "category": "code_block",
+              "data": {
+                "content": "cd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI PUSH =====\"\ngit push origin main\necho \"===== END KGI PUSH =====\"",
+                "language": "bash",
+                "widget_type": "code_block"
+              },
+              "end_idx": 377,
+              "matched_text": "```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI PUSH =====\"\ngit push origin main\necho \"===== END KGI PUSH =====\"\n```",
+              "prompt_text": null,
+              "refs": [],
+              "safe_urls": [],
+              "start_idx": 186,
+              "type": "client_defined_widget"
+            }
+          ],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "clientDefinedWidgets": {
+              "786f5c47-875f-505e-b666-304d0de352c0": {
+                "isStreaming": false,
+                "refIndex": 0,
+                "status": "resolved"
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"],__dil.jsx(\"code\",null,__dilConstants[\"1\"]),__dilConstants[\"2\"],__dil.jsx(\"code\",null,__dilConstants[\"3\"]),__dilConstants[\"4\"],__dil.jsx(\"bold\",null,__dilConstants[\"5\"],__dil.jsx(\"code\",null,__dilConstants[\"6\"])),__dilConstants[\"7\"]),__dil.jsx(\"text\",null,__dilConstants[\"8\"]),(__dilConstants[\"10\"]==null?__dil.jsx(\"__chatgptClientDefinedWidget\",{\"key\":\"cdw:0\",\"invocationId\":__dilConstants[\"9\"]}):__dilConstants[\"10\"].type===\"math\"?__dil.jsx(\"math\",{\"key\":\"cdw:0\",\"value\":__dilConstants[\"10\"].value}):__dilConstants[\"10\"].type===\"text\"?__dil.jsx(\"text\",{\"key\":\"cdw:0\"},__dilConstants[\"10\"].value):null),__dil.jsx(\"text\",null,__dilConstants[\"11\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Verification is clean. The empty ",
+              "1": "git status --short",
+              "2": " confirms there are no uncommitted changes. The ",
+              "3": "main",
+              "4": " branch is exactly ",
+              "5": "one commit ahead of ",
+              "6": "origin/main",
+              "7": ".",
+              "8": "Push the commit:",
+              "9": "786f5c47-875f-505e-b666-304d0de352c0",
+              "10": null,
+              "11": "This publishes the new raw-chat archive commit to the existing GitHub repository. It does not modify the other branch."
+            },
+            "fallbackMarkdown": "Verification is clean. The empty `git status --short` confirms there are no uncommitted changes. The `main` branch is exactly **one commit ahead of `origin/main`**\\.\n\nPush the commit\\:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI PUSH =====\"\ngit push origin main\necho \"===== END KGI PUSH =====\"\n```\n\nThis publishes the new raw-chat archive commit to the existing GitHub repository. It does not modify the other branch.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "4656e383-8e33-4dd1-9cc9-1404a45b824a",
+          "request_id": "685c034b-a6b3-46a1-b831-eeda8a2b917c",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "f3555cae-e482-48a0-b33a-c0c61519def6",
+          "turn_id": "160d4324-4e03-41df-b8bd-dfd5ca3d6fa6",
+          "view_state": {},
+          "working_turn_id": "f3555cae-e482-48a0-b33a-c0c61519def6"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298720.954033,
+        "weight": 1
+      },
+      "parent": "6b3adf4a-e6e9-4c21-9e03-c0ad96e2266c"
+    },
+    "81eda956-d7bc-4145-9a2e-f4327f5f3ce4": {
+      "children": [
+        "60a45eb4-398b-4608-b38a-0bd09901ae9f"
+      ],
+      "id": "81eda956-d7bc-4145-9a2e-f4327f5f3ce4",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": null,
+        "content": {
+          "content": "Worked for 22s",
+          "content_type": "reasoning_recap"
+        },
+        "create_time": 1795298762.976955,
+        "end_turn": false,
+        "id": "81eda956-d7bc-4145-9a2e-f4327f5f3ce4",
+        "metadata": {
+          "can_save": false,
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "disable_turn_actions": true,
+          "finished_duration_sec": 22,
+          "hide_inline_actions": true,
+          "message_type": "next",
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "f1301fde-d259-426a-95e1-dfc85d8d9ec1",
+          "reasoning_end_time": 1795298762.9677808,
+          "reasoning_group_id": "c5daf6ee-a383-4b18-96de-7ab8aec7b2b8",
+          "reasoning_recap_type": "collapse",
+          "reasoning_start_time": 1795298740.9578702,
+          "reasoning_status": "reasoning_ended",
+          "request_id": "5b054803-7dcc-4333-aa0c-c738e316e597",
+          "resolved_model_slug": "gpt-6-mini",
+          "turn_exchange_id": "dcaab5ba-3052-429e-91f6-3dd674f84589",
+          "turn_id": "c5f6a665-ca05-4811-913e-ecd32f4d8ea7",
+          "working_turn_id": "dcaab5ba-3052-429e-91f6-3dd674f84589"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298762.976955,
+        "weight": 1
+      },
+      "parent": "f1301fde-d259-426a-95e1-dfc85d8d9ec1"
+    },
+    "87655523-9011-402e-825c-5dc3a2ff6f5d": {
+      "children": [
+        "68f7e785-74de-4ad2-b8bc-46f6de1981ab"
+      ],
+      "id": "87655523-9011-402e-825c-5dc3a2ff6f5d",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Yes. It is possible to get those 18 raw-chat files into your GitHub repository without logging in through Konsole.**\n\nBut I need to be precise about the distinction:\n\n- Your local commit `2da9516` exists and contains all 18 files.\n- Your GitHub account is connected to ChatGPT.\n- That connection can write to GitHub through its API.\n- It cannot directly access your Steam Deck's local files or run `git push`.\n\nSo I cannot push those local files through the connected integration until their contents are made accessible to me.\n\n**The answer is yes, but I cannot complete the transfer from the local path alone.** I should have established that before giving you the same authentication-triggering command repeatedly."
+          ]
+        },
+        "create_time": 1795298894.360015,
+        "end_turn": true,
+        "id": "87655523-9011-402e-825c-5dc3a2ff6f5d",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"0\"])),__dil.jsx(\"text\",null,__dilConstants[\"1\"]),__dil.jsx(\"list\",{\"marker\":\"bullet\"},__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"2\"],__dil.jsx(\"code\",null,__dilConstants[\"3\"]),__dilConstants[\"4\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"5\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"6\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"7\"],__dil.jsx(\"code\",null,__dilConstants[\"8\"]),__dilConstants[\"9\"]))),__dil.jsx(\"text\",null,__dilConstants[\"10\"]),__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"11\"]),__dilConstants[\"12\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Yes. It is possible to get those 18 raw-chat files into your GitHub repository without logging in through Konsole.",
+              "1": "But I need to be precise about the distinction:",
+              "2": "Your local commit ",
+              "3": "2da9516",
+              "4": " exists and contains all 18 files.",
+              "5": "Your GitHub account is connected to ChatGPT.",
+              "6": "That connection can write to GitHub through its API.",
+              "7": "It cannot directly access your Steam Deck's local files or run ",
+              "8": "git push",
+              "9": ".",
+              "10": "So I cannot push those local files through the connected integration until their contents are made accessible to me.",
+              "11": "The answer is yes, but I cannot complete the transfer from the local path alone.",
+              "12": " I should have established that before giving you the same authentication-triggering command repeatedly."
+            },
+            "fallbackMarkdown": "**Yes. It is possible to get those 18 raw-chat files into your GitHub repository without logging in through Konsole.**\n\nBut I need to be precise about the distinction\\:\n\n- Your local commit `2da9516` exists and contains all 18 files.\n- Your GitHub account is connected to ChatGPT.\n- That connection can write to GitHub through its API.\n- It cannot directly access your Steam Deck's local files or run `git push`\\.\n\nSo I cannot push those local files through the connected integration until their contents are made accessible to me.\n\n**The answer is yes, but I cannot complete the transfer from the local path alone.** I should have established that before giving you the same authentication-triggering command repeatedly.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "869e32fa-ce6d-4291-8b23-93a3d9c6412e",
+          "request_id": "ffa5c77d-46fc-4086-a6c4-3d8667455d7f",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "d08e4c9c-70a6-44b6-8772-e3b8d027c430",
+          "turn_id": "45fe6458-8b3e-4995-8878-81801c6b8465",
+          "view_state": {},
+          "working_turn_id": "d08e4c9c-70a6-44b6-8772-e3b8d027c430"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298897.811451,
+        "weight": 1
+      },
+      "parent": "2c3d15f3-aeff-4e24-ba77-2f280ec006aa"
+    },
+    "8d15b31b-0eca-40c0-b92c-fb084b1c2f4f": {
+      "children": [
+        "5a3328ca-61d7-452c-a2e6-f8d2a1959e77"
+      ],
+      "id": "8d15b31b-0eca-40c0-b92c-fb084b1c2f4f",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\\===== BEGIN KGI RAW CHAT COPY ===== \\\n'/home/deck/Downloads/KGI/Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.md' -> '/run/media/deck/blAIne-47\\\n6GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/Chat Sorter Handoff_6a285ec\\\n9-44a0-83e8-accd-8bee721417c9.md' \\\n'/home/deck/Downloads/KGI/Chat Sorter Handoff_6a285ec9-44a0-83e8-accd-8bee721417c9.raw\\.json' -> '/run/media/deck/blA\\\nIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/Chat Sorter Handoff_6\\\na285ec9-44a0-83e8-accd-8bee721417c9.raw\\.json' \\\n'/home/deck/Downloads/KGI/Chat Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.md' -> '/run/media/deck/bl\\\nAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/Chat Triage and Extr\\\naction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.md' \\\n'/home/deck/Downloads/KGI/Chat Triage and Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.raw\\.json' -> '/run/media/d\\\neck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/Chat Triage an\\\nd Extraction_6a27b0a9-2ddc-83e8-989c-d887f9c72dcc.raw\\.json' \\\n'/home/deck/Downloads/KGI/KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.md' -> '/run/media/deck/blAIne-\\\n476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Continuity Design_6a2\\\ne2191-022c-83e8-8cbc-2e629ac88300.md' \\\n'/home/deck/Downloads/KGI/KGI Continuity Design_6a2e2191-022c-83e8-8cbc-2e629ac88300.raw\\.json' -> '/run/media/deck/b\\\nlAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Continuity Desi\\\ngn_6a2e2191-022c-83e8-8cbc-2e629ac88300.raw\\.json' \\\n'/home/deck/Downloads/KGI/KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.md' -> '/run/media/deck/blAIne\\\n-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Governance Audit 2_6\\\na28f815-946c-83e8-a7b4-5ff76ad539a3.md' \\\n'/home/deck/Downloads/KGI/KGI Governance Audit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.raw\\.json' -> '/run/media/deck/\\\nblAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Governance Aud\\\nit 2_6a28f815-946c-83e8-a7b4-5ff76ad539a3.raw\\.json' \\\n'/home/deck/Downloads/KGI/KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.md' -> '/run/media/deck/blAIne-4\\\n76GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Governance Audit_6a28f\\\n348-11d4-83e8-8d78-e74c79892f12.md' \\\n'/home/deck/Downloads/KGI/KGI Governance Audit_6a28f348-11d4-83e8-8d78-e74c79892f12.raw\\.json' -> '/run/media/deck/bl\\\nAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Governance Audit\\\n\\_6a28f348-11d4-83e8-8d78-e74c79892f12.raw\\.json' \\\n'/home/deck/Downloads/KGI/KGI Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.md' -> '/run/media/deck/b\\\nlAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Implementation \\\nProgress_6a287ef5-310c-83e8-9046-ed59cbd82d25.md' \\\n'/home/deck/Downloads/KGI/KGI Implementation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.raw\\.json' -> '/run/media/\\\ndeck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Implement\\\nation Progress_6a287ef5-310c-83e8-9046-ed59cbd82d25.raw\\.json' \\\n'/home/deck/Downloads/KGI/KGI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.md' -> '/run/media/deck/blA\\\nIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Implementation St\\\natus_6a28ddb7-90d8-83e8-a113-019379c04449.md' \\\n'/home/deck/Downloads/KGI/KGI Implementation Status_6a28ddb7-90d8-83e8-a113-019379c04449.raw\\.json' -> '/run/media/de\\\nck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Implementat\\\nion Status_6a28ddb7-90d8-83e8-a113-019379c04449.raw\\.json' \\\n'/home/deck/Downloads/KGI/KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.md' -> '/run/media/deck/blAIne-4\\\n76GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Project Overview_6a6e6\\\n660-eea0-83e8-a2ac-bd3daa68e075.md' \\\n'/home/deck/Downloads/KGI/KGI Project Overview_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.raw\\.json' -> '/run/media/deck/bl\\\nAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/KGI Project Overview\\\n\\_6a6e6660-eea0-83e8-a2ac-bd3daa68e075.raw\\.json' \\\n'/home/deck/Downloads/KGI/MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.md' -> '/run/media/deck/blAIne-47\\\n6GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/MVS Design Overview_6a2833a\\\n6-155c-83e8-bab5-ba86fc3c3288.md' \\\n'/home/deck/Downloads/KGI/MVS Design Overview_6a2833a6-155c-83e8-bab5-ba86fc3c3288.raw\\.json' -> '/run/media/deck/blA\\\nIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure/raw_chats/source_exports/MVS Design Overview_6\\\na2833a6-155c-83e8-bab5-ba86fc3c3288.raw\\.json' \\\n&#x20;\\\nCOPIED FILE COUNT: 18 \\\nEXPECTED FILE COUNT: 18 \\\n&#x20;\\\n\\===== END KGI RAW CHAT COPY ===== \\\n(**deck@ExosSteamDeck chat_archive_extractor**)$ \\\n&#x20;\\\n&#x20;"
+          ]
+        },
+        "create_time": 1795298605.704,
+        "end_turn": null,
+        "id": "8d15b31b-0eca-40c0-b92c-fb084b1c2f4f",
+        "metadata": {
+          "branching_from_conversation_id": "6b020ab7-6c48-83e8-80d1-57645cfe0e02",
+          "branching_from_conversation_owner": "user-5Ah3Jq5MjieLw3Vp9tHTJRDj",
+          "branching_from_conversation_title": "Explain blAIne (3)",
+          "can_save": false,
+          "is_context_truncation_continuation": true,
+          "message_source": null,
+          "serialization_metadata": {
+            "render_format": "markdown"
+          },
+          "turn_id": "64d2ba3e-bb1c-5651-ac9a-07dbb440cb2b",
+          "working_turn_id": "aea0a7c2-c595-4682-b439-a99242d13fb4"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298618.914437,
+        "weight": 1
+      },
+      "parent": "61241b8d-5a88-48ea-8943-e77706da9f7f"
+    },
+    "a18dfadd-1f26-4e0e-84b1-9968c8999e98": {
+      "children": [
+        "f2ad6458-0874-413c-b68d-ef5a136d5056"
+      ],
+      "id": "a18dfadd-1f26-4e0e-84b1-9968c8999e98",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "You're right. I gave you a command that attempted to use Konsole's GitHub authentication, even though your GitHub account is already connected to ChatGPT. I should have checked that distinction before telling you to run `git push`.\n\n**You do not need to log in through Konsole for me to work with your connected GitHub account.**\n\nHere's the actual situation:\n\n- Your local commit `2da9516` is complete.\n- Your GitHub connection is active.\n- I can use that connection to write to the repository through GitHub's API.\n- The integration does not provide a direct Git push operation, so I need to transfer the changes through its available Git-object operations instead.\n\nI will not ask you to authenticate again in Konsole. I also won't pretend the local commit is already on GitHub."
+          ]
+        },
+        "create_time": 1795298791.794913,
+        "end_turn": true,
+        "id": "a18dfadd-1f26-4e0e-84b1-9968c8999e98",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"],__dil.jsx(\"code\",null,__dilConstants[\"1\"]),__dilConstants[\"2\"]),__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"3\"])),__dil.jsx(\"text\",null,__dilConstants[\"4\"]),__dil.jsx(\"list\",{\"marker\":\"bullet\"},__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"5\"],__dil.jsx(\"code\",null,__dilConstants[\"6\"]),__dilConstants[\"7\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"8\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"9\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dilConstants[\"10\"]))),__dil.jsx(\"text\",null,__dilConstants[\"11\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "You're right. I gave you a command that attempted to use Konsole's GitHub authentication, even though your GitHub account is already connected to ChatGPT. I should have checked that distinction before telling you to run ",
+              "1": "git push",
+              "2": ".",
+              "3": "You do not need to log in through Konsole for me to work with your connected GitHub account.",
+              "4": "Here's the actual situation:",
+              "5": "Your local commit ",
+              "6": "2da9516",
+              "7": " is complete.",
+              "8": "Your GitHub connection is active.",
+              "9": "I can use that connection to write to the repository through GitHub's API.",
+              "10": "The integration does not provide a direct Git push operation, so I need to transfer the changes through its available Git-object operations instead.",
+              "11": "I will not ask you to authenticate again in Konsole. I also won't pretend the local commit is already on GitHub."
+            },
+            "fallbackMarkdown": "You're right. I gave you a command that attempted to use Konsole's GitHub authentication, even though your GitHub account is already connected to ChatGPT. I should have checked that distinction before telling you to run `git push`\\.\n\n**You do not need to log in through Konsole for me to work with your connected GitHub account.**\n\nHere's the actual situation\\:\n\n- Your local commit `2da9516` is complete.\n- Your GitHub connection is active.\n- I can use that connection to write to the repository through GitHub's API.\n- The integration does not provide a direct Git push operation, so I need to transfer the changes through its available Git-object operations instead.\n\nI will not ask you to authenticate again in Konsole. I also won't pretend the local commit is already on GitHub.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "8cad47a2-bd44-4ced-bac5-68fa7059b92b",
+          "request_id": "d51dad08-09c2-4e16-a510-dd72cedb71ee",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "f0da5465-4ba8-43c6-86be-52aa96b25aee",
+          "turn_id": "84f5ee46-829b-4d57-bb4d-4b70c63590fc",
+          "view_state": {},
+          "working_turn_id": "f0da5465-4ba8-43c6-86be-52aa96b25aee"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298825.471199,
+        "weight": 1
+      },
+      "parent": "e89ed17c-cefc-47ab-8379-5197f729c697"
+    },
+    "b2529115-20f6-441f-a96c-25c6dd025e66": {
+      "children": [
+        "01ba496b-3528-4c98-a612-4642a29c6c64"
+      ],
+      "id": "b2529115-20f6-441f-a96c-25c6dd025e66",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I should be able to do this without logging in in konsole"
+          ]
+        },
+        "create_time": 1795298739.664,
+        "end_turn": null,
+        "id": "b2529115-20f6-441f-a96c-25c6dd025e66",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "5b054803-7dcc-4333-aa0c-c738e316e597",
+          "turn_exchange_id": "dcaab5ba-3052-429e-91f6-3dd674f84589",
+          "turn_id": "3595dbbc-043d-5ca3-aacc-0cad71c24c2e",
+          "working_turn_id": "dcaab5ba-3052-429e-91f6-3dd674f84589"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298766.24784,
+        "weight": 1
+      },
+      "parent": "7746c0e2-fcfc-4493-9502-3524a482d47e"
+    },
+    "d821e8d3-6f10-4ffb-ba29-8a6a4fa5170d": {
+      "children": [],
+      "id": "d821e8d3-6f10-4ffb-ba29-8a6a4fa5170d",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Then we should use your existing GitHub SSH authentication over port 443. No browser login, username, password, or new credential setup.\n\nThe files are already committed locally as `2da9516`. The remaining operation is to push that commit using your existing SSH configuration.\n\nI won't give you another command that sends you into a login flow."
+          ]
+        },
+        "create_time": 1795298927.856132,
+        "end_turn": true,
+        "id": "d821e8d3-6f10-4ffb-ba29-8a6a4fa5170d",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"]),__dil.jsx(\"text\",null,__dilConstants[\"1\"],__dil.jsx(\"code\",null,__dilConstants[\"2\"]),__dilConstants[\"3\"]),__dil.jsx(\"text\",null,__dilConstants[\"4\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Then we should use your existing GitHub SSH authentication over port 443. No browser login, username, password, or new credential setup.",
+              "1": "The files are already committed locally as ",
+              "2": "2da9516",
+              "3": ". The remaining operation is to push that commit using your existing SSH configuration.",
+              "4": "I won't give you another command that sends you into a login flow."
+            },
+            "fallbackMarkdown": "Then we should use your existing GitHub SSH authentication over port 443. No browser login, username, password, or new credential setup.\n\nThe files are already committed locally as `2da9516`\\. The remaining operation is to push that commit using your existing SSH configuration.\n\nI won't give you another command that sends you into a login flow.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "8196666a-a75d-47a6-adc5-8963f8725495",
+          "request_id": "2afccf72-5feb-4d52-86b7-ae0af77548bf",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "36fb7755-d452-4933-b066-a889f4c70a51",
+          "turn_id": "73eb2149-5195-48ad-bf08-9df45f258ffb",
+          "view_state": {},
+          "working_turn_id": "36fb7755-d452-4933-b066-a889f4c70a51"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298930.209291,
+        "weight": 1
+      },
+      "parent": "68f7e785-74de-4ad2-b8bc-46f6de1981ab"
+    },
+    "d9bb8235-f064-4324-8685-6413f3ad6dbe": {
+      "children": [
+        "6b5a5006-bf56-4b9c-b34f-ba5a33dcfe2c"
+      ],
+      "id": "d9bb8235-f064-4324-8685-6413f3ad6dbe",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "thoughts",
+          "source_analysis_msg_id": "7c436bfd-0807-4ac0-952a-75109e052f69",
+          "thoughts": [
+            {
+              "chunks": [],
+              "content": "I’m checking that the commit is clean and the repository is ready before pushing. If everything looks correct, I’ll move on to the remote update and confirm the result.",
+              "finished": true,
+              "summary": "Verifying the commit"
+            },
+            {
+              "chunks": [],
+              "content": "",
+              "finished": true,
+              "summary": "Verified the commit"
+            }
+          ]
+        },
+        "create_time": 1795298694.432044,
+        "end_turn": false,
+        "id": "d9bb8235-f064-4324-8685-6413f3ad6dbe",
+        "metadata": {
+          "can_save": false,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "disable_turn_actions": true,
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "hide_inline_actions": true,
+          "message_type": "next",
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "7c436bfd-0807-4ac0-952a-75109e052f69",
+          "reasoning_group_id": "3ef3443e-1ccf-4272-95cd-4468a3272bb8",
+          "reasoning_start_time": 1795298686.6808176,
+          "reasoning_status": "is_reasoning",
+          "request_id": "0e6b4901-af1b-4b33-845b-91f0c90c676f",
+          "resolved_model_slug": "gpt-6-mini",
+          "summary_type": "raw_cot",
+          "tool_icons": [],
+          "turn_exchange_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b",
+          "turn_id": "9dffd85b-0d8a-4f2a-8322-e8ab35320d7d",
+          "working_turn_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298694.435141,
+        "weight": 1
+      },
+      "parent": "521fcdb8-b6d3-4ac5-868d-8bf3eb26f1e5"
+    },
+    "e89ed17c-cefc-47ab-8379-5197f729c697": {
+      "children": [
+        "a18dfadd-1f26-4e0e-84b1-9968c8999e98"
+      ],
+      "id": "e89ed17c-cefc-47ab-8379-5197f729c697",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "the command you gave me asked me to log into github.  I SHOULD be able to do this without logging in. wtf"
+          ]
+        },
+        "create_time": 1795298789.982,
+        "end_turn": null,
+        "id": "e89ed17c-cefc-47ab-8379-5197f729c697",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "d51dad08-09c2-4e16-a510-dd72cedb71ee",
+          "turn_exchange_id": "f0da5465-4ba8-43c6-86be-52aa96b25aee",
+          "turn_id": "1fad1a7b-66c5-54ac-92df-596d093f35e4",
+          "working_turn_id": "f0da5465-4ba8-43c6-86be-52aa96b25aee"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298811.269772,
+        "weight": 1
+      },
+      "parent": "60a45eb4-398b-4608-b38a-0bd09901ae9f"
+    },
+    "e9bc70ca-74fb-4274-98f4-a6a94e3d2fa7": {
+      "children": [
+        "2c3d15f3-aeff-4e24-ba77-2f280ec006aa"
+      ],
+      "id": "e9bc70ca-74fb-4274-98f4-a6a94e3d2fa7",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "You're right. This is the command you need:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\ngit push origin main\n```\n\n**No new login command.** If Git prompts for authentication, cancel it; that means your existing Konsole Git credential isn't configured. The command itself pushes your committed 18 raw-chat files (`2da9516`) to `origin/main`."
+          ]
+        },
+        "create_time": 1795298848.927591,
+        "end_turn": true,
+        "id": "e9bc70ca-74fb-4274-98f4-a6a94e3d2fa7",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "code_blocks": {
+            "0": {
+              "edited": false,
+              "id": "fwilqh",
+              "preview_language": null,
+              "previewable": false
+            }
+          },
+          "content_references": [
+            {
+              "alt": null,
+              "category": "code_block",
+              "data": {
+                "content": "cd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\ngit push origin main",
+                "language": "bash",
+                "widget_type": "code_block"
+              },
+              "end_idx": 170,
+              "matched_text": "```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\ngit push origin main\n```",
+              "prompt_text": null,
+              "refs": [],
+              "safe_urls": [],
+              "start_idx": 46,
+              "type": "client_defined_widget"
+            }
+          ],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "clientDefinedWidgets": {
+              "3570ee16-c5f0-5367-9e94-c33896d4a99e": {
+                "isStreaming": false,
+                "refIndex": 0,
+                "status": "resolved"
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"text\",null,__dilConstants[\"0\"]),(__dilConstants[\"2\"]==null?__dil.jsx(\"__chatgptClientDefinedWidget\",{\"key\":\"cdw:0\",\"invocationId\":__dilConstants[\"1\"]}):__dilConstants[\"2\"].type===\"math\"?__dil.jsx(\"math\",{\"key\":\"cdw:0\",\"value\":__dilConstants[\"2\"].value}):__dilConstants[\"2\"].type===\"text\"?__dil.jsx(\"text\",{\"key\":\"cdw:0\"},__dilConstants[\"2\"].value):null),__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"3\"]),__dilConstants[\"4\"],__dil.jsx(\"code\",null,__dilConstants[\"5\"]),__dilConstants[\"6\"],__dil.jsx(\"code\",null,__dilConstants[\"7\"]),__dilConstants[\"8\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "You're right. This is the command you need:",
+              "1": "3570ee16-c5f0-5367-9e94-c33896d4a99e",
+              "2": null,
+              "3": "No new login command.",
+              "4": " If Git prompts for authentication, cancel it; that means your existing Konsole Git credential isn't configured. The command itself pushes your committed 18 raw-chat files (",
+              "5": "2da9516",
+              "6": ") to ",
+              "7": "origin/main",
+              "8": "."
+            },
+            "fallbackMarkdown": "You're right. This is the command you need\\:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\ngit push origin main\n```\n\n**No new login command.** If Git prompts for authentication, cancel it; that means your existing Konsole Git credential isn't configured. The command itself pushes your committed 18 raw-chat files (`2da9516`\\) to `origin/main`\\.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "35af1f98-6f98-4278-8f8a-3919d1fd689c",
+          "request_id": "6f60d988-21d9-4067-a20a-cf64367575d0",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "ddb8275c-91c3-4084-87e4-50958cddca4f",
+          "turn_id": "b84388df-c29a-4763-b35e-cc668bcc8f9b",
+          "view_state": {},
+          "working_turn_id": "ddb8275c-91c3-4084-87e4-50958cddca4f"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298870.318491,
+        "weight": 1
+      },
+      "parent": "3b1087f1-91f4-4c41-af30-91a314eb259c"
+    },
+    "f1301fde-d259-426a-95e1-dfc85d8d9ec1": {
+      "children": [
+        "81eda956-d7bc-4145-9a2e-f4327f5f3ce4"
+      ],
+      "id": "f1301fde-d259-426a-95e1-dfc85d8d9ec1",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "thoughts",
+          "source_analysis_msg_id": "a40de886-1985-4adb-a08d-93c058f855f4",
+          "thoughts": [
+            {
+              "chunks": [],
+              "content": "I’m refining the approach: the integration can recreate and publish the commit without a terminal login, but it still needs access to every local file’s contents. Identical commit metadata may not be preserved unless those objects are uploaded directly.",
+              "finished": true,
+              "summary": "Clarifying the push path"
+            },
+            {
+              "chunks": [],
+              "content": "You’re right: I shouldn’t assume a terminal login is necessary. I’m distinguishing between moving an existing local commit and recreating it remotely; the latter requires transferring the local files first.",
+              "finished": true,
+              "summary": "Revising the upload plan"
+            },
+            {
+              "chunks": [],
+              "content": "",
+              "finished": true,
+              "summary": "Clarified push path and revised upload plan"
+            }
+          ]
+        },
+        "create_time": 1795298754.585364,
+        "end_turn": false,
+        "id": "f1301fde-d259-426a-95e1-dfc85d8d9ec1",
+        "metadata": {
+          "can_save": false,
+          "citations": [],
+          "content_references": [],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "disable_turn_actions": true,
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "hide_inline_actions": true,
+          "message_type": "next",
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "0c38f5bc-8af8-48df-b1c6-86f95d763c9c",
+          "reasoning_group_id": "c5daf6ee-a383-4b18-96de-7ab8aec7b2b8",
+          "reasoning_start_time": 1795298740.9578702,
+          "reasoning_status": "is_reasoning",
+          "request_id": "5b054803-7dcc-4333-aa0c-c738e316e597",
+          "resolved_model_slug": "gpt-6-mini",
+          "summary_type": "raw_cot",
+          "tool_icons": [],
+          "turn_exchange_id": "dcaab5ba-3052-429e-91f6-3dd674f84589",
+          "turn_id": "c5f6a665-ca05-4811-913e-ecd32f4d8ea7",
+          "working_turn_id": "dcaab5ba-3052-429e-91f6-3dd674f84589"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298762.972045,
+        "weight": 1
+      },
+      "parent": "01ba496b-3528-4c98-a612-4642a29c6c64"
+    },
+    "f1c2acf8-a7b0-4f87-b396-9d01e6615065": {
+      "children": [
+        "6b3adf4a-e6e9-4c21-9e03-c0ad96e2266c"
+      ],
+      "id": "f1c2acf8-a7b0-4f87-b396-9d01e6615065",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "assistant"
+        },
+        "channel": "final",
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "<badge color=\"success\">Commit created</badge>\n\nThe 18 raw-chat exports are now committed locally:\n\n- **Commit:** `2da9516`\n- **Message:** `Add original KGI raw chat exports`\n- **Files:** 18\n- **Insertions:** 123,585\n\nNow verify the commit and confirm the working tree is clean before publishing it to GitHub:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI COMMIT VERIFICATION =====\"\n\ngit log -1 --oneline\necho\ngit status --short\necho\ngit branch -vv\n\necho\necho \"===== END KGI COMMIT VERIFICATION =====\"\n```\n\nPaste the output. Then we can push `main` to GitHub."
+          ]
+        },
+        "create_time": 1795298686.996408,
+        "end_turn": true,
+        "id": "f1c2acf8-a7b0-4f87-b396-9d01e6615065",
+        "metadata": {
+          "can_save": true,
+          "citations": [],
+          "code_blocks": {
+            "0": {
+              "edited": false,
+              "id": "8wr0as",
+              "preview_language": null,
+              "previewable": false
+            }
+          },
+          "content_references": [
+            {
+              "alt": null,
+              "category": "code_block",
+              "data": {
+                "content": "cd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI COMMIT VERIFICATION =====\"\n\ngit log -1 --oneline\necho\ngit status --short\necho\ngit branch -vv\n\necho\necho \"===== END KGI COMMIT VERIFICATION =====\"",
+                "language": "bash",
+                "widget_type": "code_block"
+              },
+              "end_idx": 559,
+              "matched_text": "```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI COMMIT VERIFICATION =====\"\n\ngit log -1 --oneline\necho\ngit status --short\necho\ngit branch -vv\n\necho\necho \"===== END KGI COMMIT VERIFICATION =====\"\n```",
+              "prompt_text": null,
+              "refs": [],
+              "safe_urls": [],
+              "start_idx": 287,
+              "type": "client_defined_widget"
+            }
+          ],
+          "conversation_followup_suggestions_eligible": false,
+          "cot_version": "v5",
+          "default_model_slug": "auto",
+          "finish_details": {
+            "stop_tokens": [
+              200002
+            ],
+            "type": "stop"
+          },
+          "gizmo_id": "g-p-6b005f4916c481919c51e13efbda38ac",
+          "is_complete": true,
+          "message_type": "next",
+          "model_dil_v2": {
+            "appData": {
+              "opGenui": {
+                "componentResults": {},
+                "interactionSurface": "mainline",
+                "modelDataBindings": {}
+              }
+            },
+            "clientDefinedWidgets": {
+              "0ef31012-cc0b-50ac-94d2-97f657d11463": {
+                "isStreaming": false,
+                "refIndex": 0,
+                "status": "resolved"
+              }
+            },
+            "code": "DIL.render(__dil.jsx(()=>{const __dilConstants=DIL.useConstants();const __dilModelDataBindings=DIL.useAppData((appData)=>appData.opGenui?.modelDataBindings??{});return __dil.jsx(__dil.Fragment,null,__dil.jsx(\"badge\",{\"color\":\"success\"},__dilConstants[\"0\"]),__dil.jsx(\"text\",null,__dilConstants[\"1\"]),__dil.jsx(\"list\",{\"marker\":\"bullet\"},__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"2\"]),__dilConstants[\"3\"],__dil.jsx(\"code\",null,__dilConstants[\"4\"]))),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"5\"]),__dilConstants[\"6\"],__dil.jsx(\"code\",null,__dilConstants[\"7\"]))),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"8\"]),__dilConstants[\"9\"])),__dil.jsx(\"list-item\",null,__dil.jsx(\"text\",null,__dil.jsx(\"bold\",null,__dilConstants[\"10\"]),__dilConstants[\"11\"]))),__dil.jsx(\"text\",null,__dilConstants[\"12\"]),(__dilConstants[\"14\"]==null?__dil.jsx(\"__chatgptClientDefinedWidget\",{\"key\":\"cdw:0\",\"invocationId\":__dilConstants[\"13\"]}):__dilConstants[\"14\"].type===\"math\"?__dil.jsx(\"math\",{\"key\":\"cdw:0\",\"value\":__dilConstants[\"14\"].value}):__dilConstants[\"14\"].type===\"text\"?__dil.jsx(\"text\",{\"key\":\"cdw:0\"},__dilConstants[\"14\"].value):null),__dil.jsx(\"text\",null,__dilConstants[\"15\"],__dil.jsx(\"code\",null,__dilConstants[\"16\"]),__dilConstants[\"17\"]));},{\"key\":\"body:0\"}));",
+            "constants": {
+              "0": "Commit created",
+              "1": "The 18 raw-chat exports are now committed locally:",
+              "2": "Commit:",
+              "3": " ",
+              "4": "2da9516",
+              "5": "Message:",
+              "6": " ",
+              "7": "Add original KGI raw chat exports",
+              "8": "Files:",
+              "9": " 18",
+              "10": "Insertions:",
+              "11": " 123,585",
+              "12": "Now verify the commit and confirm the working tree is clean before publishing it to GitHub:",
+              "13": "0ef31012-cc0b-50ac-94d2-97f657d11463",
+              "14": null,
+              "15": "Paste the output. Then we can push ",
+              "16": "main",
+              "17": " to GitHub."
+            },
+            "fallbackMarkdown": "(Commit created)\n\nThe 18 raw-chat exports are now committed locally\\:\n\n- **Commit\\:** `2da9516`\n- **Message\\:** `Add original KGI raw chat exports`\n- **Files\\:** 18\n- **Insertions\\:** 123,585\n\nNow verify the commit and confirm the working tree is clean before publishing it to GitHub\\:\n\n```bash\ncd /run/media/deck/blAIne-476GB-SAM/blAIne/repositories/knowledge-governance-infrastructure\n\necho \"===== BEGIN KGI COMMIT VERIFICATION =====\"\n\ngit log -1 --oneline\necho\ngit status --short\necho\ngit branch -vv\n\necho\necho \"===== END KGI COMMIT VERIFICATION =====\"\n```\n\nPaste the output. Then we can push `main` to GitHub.",
+            "fallbackMarkdownVersion": 1
+          },
+          "model_slug": "gpt-6-mini",
+          "model_switcher_deny": [],
+          "parent_id": "6b5a5006-bf56-4b9c-b34f-ba5a33dcfe2c",
+          "request_id": "0e6b4901-af1b-4b33-845b-91f0c90c676f",
+          "resolved_model_slug": "gpt-6-mini",
+          "search_result_groups": [],
+          "turn_exchange_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b",
+          "turn_id": "9dffd85b-0d8a-4f2a-8322-e8ab35320d7d",
+          "view_state": {},
+          "working_turn_id": "4e1142fe-2bf1-4056-abb4-ebca98d2e84b"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298697.024561,
+        "weight": 1
+      },
+      "parent": "6b5a5006-bf56-4b9c-b34f-ba5a33dcfe2c"
+    },
+    "f2ad6458-0874-413c-b68d-ef5a136d5056": {
+      "children": [
+        "322511d3-f73d-4f0a-9d0e-77ce0e04e957"
+      ],
+      "id": "f2ad6458-0874-413c-b68d-ef5a136d5056",
+      "message": {
+        "author": {
+          "metadata": {},
+          "name": null,
+          "role": "user"
+        },
+        "channel": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "holy shit. I WANT  TO PUSH MY FUCKIND DOCUMENTS TO GITHUB"
+          ]
+        },
+        "create_time": 1795298811.971,
+        "end_turn": null,
+        "id": "f2ad6458-0874-413c-b68d-ef5a136d5056",
+        "metadata": {
+          "can_save": false,
+          "message_source": null,
+          "request_id": "3b15afa1-4cc0-4558-b2b5-380e51b18f2a",
+          "turn_exchange_id": "0b6a5da5-4138-489d-8be4-ff71ebf37933",
+          "turn_id": "004f29b4-d2e3-57a5-9646-917cdc2fd84b",
+          "working_turn_id": "0b6a5da5-4138-489d-8be4-ff71ebf37933"
+        },
+        "recipient": "all",
+        "status": "finished_successfully",
+        "update_time": 1795298829.657514,
+        "weight": 1
+      },
+      "parent": "a18dfadd-1f26-4e0e-84b1-9968c8999e98"
+    }
+  },
+  "memory_scope": "global_enabled",
+  "moderation_results": [],
+  "owner": null,
+  "pinned_time": null,
+  "plugin_ids": null,
+  "safe_urls": [
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/",
+    "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology/nsf26-510/solicitation?utm_source=chatgpt.com",
+    "https://ies.ed.gov/funding/research/programs/small-business-innovation-research-sbir/solicitation-information",
+    "https://kamanau.org/alianzas-institucionales/",
+    "t.name",
+    "https://github.com/blainesmith33/knowledge-governance-infrastructure",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2026-nominations-request/",
+    "https://www.azcommerce.com/fast-program/",
+    "https://github.com/blainesmith33/knowledge-governance-infrastructure?utm_source=chatgpt.com",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/",
+    "https://opportunitytracker.ug/opportunity/up-to-125000-in-funding-for-global-technology-innovators-apply-for-the-mozilla-foundation-fellowship-2027-2028/",
+    "https://dev.clauneck.workers.dev/devengers/dev-https-www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications",
+    "https://scholarshipways.com/mozilla-fellowship-embedded-or-independent-track/",
+    "https://github.com/williamlabdev/aine-control-plane",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/?utm_source=chatgpt.com",
+    "https://foundation.mofostaging.net/en/what-we-do/grantmaking/fellowship/",
+    "https://images.openai.com/static-rsc-1/I7rmEYtff2JVd8SF4HfkjhJI4zoZezf0VjJn0FqcnidAyQ48mTKR6JyM_3QP7zFUJBS6OOR_oFowzsSV-c84WX2o2RJm5b9llZGKNi91A2M",
+    "https://kamanau.org/area-neuroderechos/",
+    "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology",
+    "https://github.com/George121380",
+    "https://www.mozillafoundation.org/es/what-we-fund/programs/senior-fellows/call-for-proposals/",
+    "https://images.openai.com/static-rsc-4/S0YTckx_KIgijNXh6PlOsiokMferKsPOEusSKDMIPTLpCSfR-fT9DZvym4bEjh0FGBsfa35k-YHDpXPqUzOAlpljIogiVFnWFgQKRS6MO2rONMOf9AiJWdrdL8q5XCZUc3pFKsXMRcfhH2Va6JfQWSs4s35I_Uit7zKjacic-YM?purpose=inline",
+    "https://kamanau.org/area-inteligencia-artificial/",
+    "https://www.openai.com",
+    "https://mozillafoundation.tfaforms.net/wf/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6InYyIn0.eyJ3b3JrZmxvd1Nlc3Npb25JZCI6ImRkNzc4NmE2LTQxMjEtNGIyYS1hYWE4LTNhOTNlYjRmMjc0ZiIsIm5vbmNlIjoiZWJjUlc2MXNMN050bnNjd3ZIOGJzMVU4YjRWZkNrQWYlM0FkMDczYmRhZDBmYmVmZjc4Mzc1NGEyYzkzNWVlZGQ1NyIsImV2ZW50IjoiZm9ybS52aWV3LmRpc3BsYXkiLCJleHBpcmVzIjoxNzk1NDAyNjE1fQ.BDXOjzjpzOTWcHcavgXOW4TjBMkJZGcz7icfUAsC4Y0?utm_source=chatgpt.com",
+    "https://images.openai.com/static-rsc-1/vc0xPRSQdTnijWcSQkVEUK8XMrMjggZ_oaazFX-v8yFPuu_sK_Eyu3FZ_08VIihHTXTyMIKctwk9f-eqETLDo3lsJ9CUsjTSvXaicpQB-j8",
+    "https://simpler.grants.gov/opportunity/d2083747-1b34-40ad-be72-318a7154101d",
+    "https://www.mozillafoundation.org/ca/what-we-fund/programs/senior-fellows/fellowship-details/",
+    "https://digitallibrary.un.org/record/4076883/files/A_HRC_58_58-EN.pdf",
+    "https://assets.mofoprod.net/network/documents/PUBLIC_2027_2028_Fellowship_RFP-3.pdf",
+    "https://images.openai.com/static-rsc-4/dv3fICvyn7emSnbMSz4TkdCZUh8y3aAGhWFAfgCeGNhqrqbtwy3tBj1_-csvjq3SoUV9uL2VFP4KKCcWU96Gvzih-5g_fViRNA1naQGJLJpUVRjR6sXA-xDp1MxjusyqTU3Wqbslue46iQC6enud7CmLai3ZJPz-OBmElmHRCIE-c20pd8q5lvLsYshvfhrS?purpose=fullsize",
+    "https://github.com/mehrdadfazli/CEI",
+    "https://images.openai.com/static-rsc-1/62cwVeFS4Nr_hzZFmB5HVUWXYRn5IMDyApIS_3RkEymHAo7C3G7eux_SuSe4MEBwFLD_D0b3raWOr0t7wIq3xxmh9Rj99kQyU-F3yVsY4gtm0oQd2vQmH1SWTdMNufJ3",
+    "https://kamanau.org/",
+    "https://seedfund.nsf.gov/",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/",
+    "https://www.sbir.gov/topics/12949",
+    "https://www.mozillafoundation.org/sw/what-we-fund/programs/fellows-for-tech-and-society/faq/",
+    "https://assets.mofoprod.net/network/documents/PUBLIC_2027_2028_Fellowship_RFP-3.pdf?utm_source=chatgpt.com",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/?utm_source=chatgpt.com",
+    "https://opportunitiesforyouth.org/2026/10/29/mozilla-foundation-fellowship-2027-2028-apply-for-up-to-125000-in-funding-to-build-a-better-technology-future/?amp=1",
+    "https://github.com/MtnMCG/PCEI",
+    "https://tuidentidadsegura.org/",
+    "https://images.openai.com/static-rsc-1/PnCtcvYJNv9UUNgrV4FTSaqH-d7VXZY96km0cAVIeMSwiyFOXoTa6iBc47CFG0GlzWSfO97djXECIJyr1NypIISmwa-e35bSyW5gM7V86fXQmJ-8HJQqJu9AWmPBK6wR",
+    "https://github.com/tpielok/KPG",
+    "https://mozillafoundation.tfaforms.net/wf/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6InYyIn0.eyJ3b3JrZmxvd1Nlc3Npb25JZCI6ImRkNzc4NmE2LTQxMjEtNGIyYS1hYWE4LTNhOTNlYjRmMjc0ZiIsIm5vbmNlIjoiZWJjUlc2MXNMN050bnNjd3ZIOGJzMVU4YjRWZkNrQWYlM0FkMDczYmRhZDBmYmVmZjc4Mzc1NGEyYzkzNWVlZGQ1NyIsImV2ZW50IjoiZm9ybS52aWV3LmRpc3BsYXkiLCJleHBpcmVzIjoxNzk1NDAyNjE1fQ.BDXOjzjpzOTWcHcavgXOW4TjBMkJZGcz7icfUAsC4Y0",
+    "https://education.github.com/git-cheat-sheet-education.pdf?file=git-cheat-sheet-education.pdf",
+    "https://kamanau.org/proyectos/",
+    "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology/nsf26-510/solicitation?trk=public_post_comment-text&utm_source=chatgpt.com",
+    "https://www.neurorightsfoundation.org/advocacy/latin-america",
+    "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology/nsf26-510/solicitation?trk=public_post_comment-text",
+    "https://github.com/zhuohaoyu/KIEval",
+    "https://training.github.com/downloads/github-git-cheat-sheet.pdf",
+    "https://www.mozillafoundation.org/ca/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/",
+    "https://kamanau.org/kamanau-organizacion-anfitriona-fellowship-fundacion-mozilla-2027-2028/",
+    "https://www.mozillafoundation.org/en/join-us/",
+    "https://www.mozillafoundation.org/fy-NL/what-we-fund/programs/senior-fellows/faq-senior-fellowships/",
+    "https://education.github.com/git-cheat-sheet-education.pdf?source=post_page---------------------------",
+    "https://www.mozillafoundation.org/ca/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/?utm_source=chatgpt.com",
+    "https://images.openai.com/static-rsc-1/1Jz5RfkCXFE-ZGaQHROIaWfS5Y3vmeWdYAIhRgmThF8tCZX7ZwMgRLU4W3JdO1UqCRIJWQi8GYa6RHwKqH4l6SPSV3OQ19blzj077ZZrc3OXohtrjOovNcNSKtUuXF-k",
+    "https://www.mozillafoundation.org/sw/what-we-do/grantmaking/incubator/human-scale-ai/call-for-proposals/faqs/",
+    "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology/nsf26-510",
+    "https://www.nsf.gov/funding/opportunities/small-business-innovation-research-small-business-technology/nsf26-510/solicitation",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/?utm_source=chatgpt.com",
+    "https://images.openai.com/static-rsc-1/EV80cTqXWOpfafAK1rcNeR3Rbm_YjlxzykWpukpgrK5PJ6VvwCEfUUcKoDchk-Cf14Mjk-p1F3XqrELwFMm4mDTbqlUEFjozqnAKqgWlaPJeIBPQCZxbS_QCRYbPJyDX",
+    "https://kamanau.org/?utm_source=chatgpt.com",
+    "https://kamanau.org/inscripciones-moot-court-derecho-tecnologia-2027-neurotecnologia/",
+    "https://opportunitiesforyouth.org/2026/10/29/mozilla-foundation-fellowship-2027-2028-apply-for-up-to-125000-in-funding-to-build-a-better-technology-future/",
+    "https://www.grants.gov/search-results-detail/364255",
+    "https://images.openai.com/static-rsc-1/nyddNSTvN5UrLO7ATRvuusV1BrUJuoxWFMStQnRzHSg_OO-NP3LvC0RB8l_vRh9sAqA9AX5jcgqmyo0HSFgYJfl6opBDA2qjRdJpVFiEyqk",
+    "https://github.com/HelloKevin07",
+    "https://kamanau.org/alianzas-institucionales/?utm_source=chatgpt.com",
+    "https://www.azcommerce.com/fast-program/?utm_source=chatgpt.com",
+    "https://kamanau.org/neuroderechos-2/?utm_source=chatgpt.com",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/?tcad=1&utm_source=chatgpt.com",
+    "https://governmentworks.pub/jobs/j1942/",
+    "https://foundation.mofostaging.net/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/?form=donate-header",
+    "https://www.mozillafoundation.org/ca/what-we-do/grantmaking/fellowship/2026-nominations-request/",
+    "https://education.github.com/git-cheat-sheet-education.pdf",
+    "https://images.openai.com/static-rsc-1/67c8VouYUflDyBo5la26bj44kmLs_YQTQpD8sVszNsqsJJHydyE79igHduNkBYIYxyxiX4pYxCW0R3gKlB5_0GrNWoI4wVy4pBI1NxU0IcTp8z_KVCtETWH21ulRBmey",
+    "https://opportunitypoint.org/call-for-applications-mozilla-foundation-fellowships-2027-2028/",
+    "https://raw.github.com/lidingpku/iswc-archive/master/paper/iswc-2013/82180529-knowledge-graph-identification.pdf",
+    "https://www.linkedin.com/posts/unitary-foundation_were-partnering-with-the-mozilla-%F0%9D%97%99%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BB%F0%9D%97%B1%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB-activity-7447340360164421632-_zGy",
+    "https://kamanau.org/kamanau-organizacion-anfitriona-fellowship-fundacion-mozilla-2027-2028/?utm_source=chatgpt.com",
+    "https://kamanau.org/neuroderechos-2/",
+    "https://github.com/blainesmith33/personal-engineering-intelligence-system",
+    "https://kamanau.org/kamanau/",
+    "https://github.com/boudinfl/pke",
+    "https://www.mozillafoundation.org/nl/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/",
+    "https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/?tcad=1",
+    "https://www.mozillafoundation.org/nl/what-we-do/grantmaking/fellowship/",
+    "https://kamanau.org/temas/",
+    "https://rekoja.com/find/mozilla-fellowship/guide",
+    "https://seedfund.nsf.gov/apply/full-proposal/",
+    "https://github.com/linqs/KnowledgeGraphIdentification",
+    "https://www.liber-tech.org/",
+    "https://kamanau.org/caso-girardi-contra-emotiv-neuroderechos/",
+    "https://www.mozillafoundation.org/es/what-we-fund/programs/fellows-for-tech-and-society/faq/",
+    "https://images.openai.com/static-rsc-1/gfd3_43Gzk2QRM1q4KV6wBYKQWrchbB_BQqgreb-4ITXRMiaeXTrWQk2ru6-2nnVfGqQ9aqRwm1fW5BGDO-p7dxqVcWL7BD74RPV3dfl3B8",
+    "https://github.com/blainesmith33/personal-engineering-intelligence-system?utm_source=chatgpt.com",
+    "https://kamanau.org/institucionales/"
+  ],
+  "sectioned_conversation": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "title": "Explain blAIne (4)",
+  "update_time": 1795742846.276153,
+  "voice": null
+}
