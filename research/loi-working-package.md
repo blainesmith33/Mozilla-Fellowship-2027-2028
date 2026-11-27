@@ -6,11 +6,11 @@
 
 ## Source and accuracy note
 
-The official LOI portal was retrieved as an indexed snapshot of Mozilla’s current form, and the official 2027–2028 RFP and FAQs were also available. The live form uses an expiring FormAssembly URL, so verify the fields and limits in the portal before submitting. The captured form lists the questions and response fields below; the previously retrieved form summary records the listed word limits. No limit was shown for administrative/select fields. [Official LOI portal](https://mzl.la/fellowshipsLOI) · [Official RFP](https://assets.mofoprod.net/network/documents/PUBLIC_2027_2028_Fellowship_RFP-3.pdf) · [Official FAQs](https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/)
+The official 2027–2028 RFP reproduces the LOI questions, fields, answer choices, and limits. The requirements below are checked against that form text in the RFP, rather than inferred from application conventions or earlier summaries. The live portal remains the final authority if its form changes. [Official RFP, “Letters of Intent Questions,” sections 1–7](https://assets.mofoprod.net/network/documents/PUBLIC_2027_2028_Fellowship_RFP-3.pdf) · [Official LOI portal](https://mzl.la/fellowshipsLOI) · [Official FAQs](https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/)
 
 Mozilla’s RFP says Embedded projects respond to a host-identified issue and are refined with the host in the first weeks. Applicants must be able to receive funds where they live/work, and Track I must meet host time-zone compatibility. The RFP looks for work that is trailblazing, rigorous, and community-driven, can reach a prototype or usable output within 12 months, and is designed with affected people. It requires work in the open and a charitable/public benefit. Do not use these as substitutes for the form’s actual fields. [RFP, “Embedded Fellows,” “Who we look for,” “Applicant Eligibility,” and “How we decide”](https://assets.mofoprod.net/network/documents/PUBLIC_2027_2028_Fellowship_RFP-3.pdf) · [FAQs](https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/)
 
-The official form snapshot provides the seven-section field structure. A prior assistant message in the archived conversation claimed Section 7 also has an optional permission to share with aligned funders; that field is absent from the indexed form snapshot reviewed here. Confirm against the live form instead of assuming it is required. [Conversation: `extracted_chats/Explain blAIne (18)_6b090052-dbd8-83e8-8015-fad280e31cf5.md`, assistant’s form correction around lines 705–745; indexed official form result]
+The official RFP includes all seven sections. It confirms an optional aligned-funder sharing question in Section 7; a prior indexed snapshot that did not show it was incomplete. The RFP is the basis for the corrected requirements below. Verify only if the live portal has since changed. [Official RFP, LOI Sections 1–7]
 
 **Eligibility checks from the RFP/FAQ:** apply as an individual; be legally eligible to receive Mozilla grant funds in the country where based; satisfy the Embedded host’s geographic/time-zone requirements; and be available for the full 12-month fellowship beginning June 1, 2027. The FAQ says U.S. citizenship or separate U.S. work authorization is not required merely to receive a grant, but legal fund-receipt eligibility still must be confirmed. Other work or study is possible if fellowship commitments can be met. Kamanau’s published preference is Southern Cone time (UTC−3/−4); confirm availability from Kingman, Arizona and the live portal’s location gate. [Official RFP; Official FAQs]
 
@@ -18,7 +18,7 @@ The official form snapshot provides the seven-section field structure. A prior a
 
 ### What Mozilla asks
 
-Fields: first name, last name, preferred name, pronouns, email; current location (primary place of residence during the Fellowship, city, state/province, country, permission to work in other countries); current role; company/organization/affiliation; LinkedIn and GitHub URLs; Builder Profile (public work sample link, or “nothing public yet”); professional website/portfolio; years of relevant professional experience; acknowledgement of ability to participate for 12 months beginning June 1, 2027; and confirmation that the applicant is legally able to receive Mozilla grant and Fellowship funds. There is a country/location eligibility gate in the form. No essay word limit is shown.
+Fields and limits: Full Name (required, 100 characters); Preferred Name (required, 100); Email Address (required, 100); Current Location (City, Country; required, and if living in multiple places use the primary Fellowship-period location); permission to work in other countries (if applicable, list them; 100 characters); Current Role & Organization/Affiliation (required, 150 characters); LinkedIn URL; GitHub URL; Builder Profile (required: “Do you have a public link that we can open: a repo, demo, dataset, deployment, paper, or recording of a performance that we can view?” If yes, share one or more links; accompanying text area up to 200 words); Professional Website/Portfolio URL; Years of Relevant Professional Experience (required: 0–2, 3–5, 6–10, 11–15, or 16+); Fellowship Availability (required yes/no acknowledgement of full participation in the 12-month Fellowship beginning June 1, 2027); and Legal Eligibility (required yes/no confirming legal ability to receive Mozilla Foundation funding). No pronouns or state/province field appears in the RFP form text. [Official RFP, Section 1]
 
 ### Relevant facts and evidence
 
@@ -32,15 +32,15 @@ The record supports Blaine as the human who originates project objectives, sets 
 
 ### Working content and applicant questions
 
-- Fill factual/contact fields directly; do not infer current role, affiliation, pronouns, or years of experience from old chats.
-- Candidate Builder Profile: a public KGI/PEIS repository plus a short project-status explanation. Choose the item that best demonstrates work a reviewer can inspect.
-- Confirm: legal eligibility to receive funds in the country of residence/work; primary 2027 location; ability to participate June 1, 2027–May 31, 2028 and required events; years of relevant experience category; current URLs; any work permission outside the U.S.
+- Fill factual/contact fields directly; do not infer current role, affiliation, or years of experience from old chats. The RFP form does not request pronouns.
+- Candidate Builder Profile: one or more public KGI/PEIS links plus a concise, accurate status explanation within 200 words. Choose work a reviewer can open.
+- Confirm: exact primary Fellowship-period location; legal eligibility to receive funds; full-program availability; experience category; current URLs; and whether any other-country work permission should be listed. The official form asks for city and country, not state/province.
 
 ## 2. Fellowship Track and Focus
 
 ### What Mozilla asks
 
-Select the Fellowship track. For Track I, answer the geographic-eligibility question and select a host organization; answer **“Why this Host Organization?”** (maximum 100 words). Track II applicants instead select a primary issue area and describe a wildcard area if chosen. For this application, use Track I and Fundación Kamanau only. [Official LOI portal; RFP]
+Required track selection: Track I Embedded or Track II Independent. For Track I, answer yes/no to whether the current location meets the requirement: based in Chile, Germany, Indonesia, Nigeria, or the United States, or able to work flexibly as a remote Fellow across time zones; select a host; then answer **“How does your expertise align with this organization’s work and its community’s needs?”** (100 words). Track II instead selects one primary issue area (Neurotech, biotech and physical AI; Hard infrastructure: compute, energy, quantum, and the extremes; Raising p(bloom); Business models for the post-agentic web; Shared security and audit infrastructure for small organizations; Sovereign AI, public infrastructure and maintenance; Creative Advocacy; or Wildcard). If “Wildcard” is selected, explain in 50 words max. For this application, use Track I and Fundación Kamanau only. [Official RFP, Section 2]
 
 ### Relevant facts and evidence
 
@@ -69,13 +69,13 @@ Confirm current time-zone flexibility. The RFP lists Kamanau’s preference as S
 | Your One-Liner — “In one sentence, what makes your project interesting?” | 30 words |
 | Target Users — “Who is this built for? Describe the specific people or communities that will use your prototype/tool/end project.” | 50 words |
 | Traction to Date — “What are your numbers today? Share any that apply: active target users, deployments, contributors, paying customers, partners. If you’re pre-launch, tell us what you’re measuring and where you are now.” | 50 words |
-| Primary Project Output(s) — select all that apply; elaborate if “Other” | No essay limit shown |
-| Project Stage | Select field |
+| Primary Project Output(s) — select all that apply: technology platform/tool; dataset; policy framework/recommendations; community organizing tools; research publication; educational resources; creative/artistic work; or Other (specify in 50 characters) | Select field; Other text 50 characters |
+| Project Stage — Concept or wireframe only; Working prototype; Deployed with early users (less than 100 users); or Deployed at scale (100+ user) | Select field |
 | Project Impact — “Should your project be successful, beyond your wildest imagination, what changes in the field?” | 150 words |
 | Disruption — “Who would be most disrupted if this works, and why?” | 50 words |
 | Project Milestones — high-level quarterly timeline and anticipated deliverables; milestones may be revised with Mozilla/Track I host if selected | 150 words |
-| Charitable purpose/public benefit — yes/no, then “Briefly describe the public benefit of this project and who will benefit from this work beyond the users of your project.” | No limit shown in captured form; confirm live form |
-| How do you plan to work in the open? — select applicable outputs (code/assets, education, research, datasets, workshops/presentations, another public resource, none) | No essay limit shown |
+| “Will this project serve a charitable purpose and create meaningful public benefit?” (yes/no), then “Briefly describe the public benefit of this project and who will benefit from this work beyond the users of your project.” | 150 words for description |
+| “How do you plan to work in the open?” — select all that apply: open sourcing code/assets; publishing educational materials; publishing research papers; openly sharing datasets; public workshops/presentations; another public-facing resource; or none | Select field; no separate limit stated |
 
 ### Relevant facts and evidence
 
@@ -136,7 +136,7 @@ Questions: What prior paid/unpaid work, roles, or community experience should co
 
 ### What Mozilla asks
 
-“What are the three things that you hope to get out of the Fellowship?” Select up to three from: funding to focus on work; connections to future funders/investors; technical support/expert advice; coaching/leadership development; peer learning; Mozilla network; visibility/platforms (including media, speaking, MozFest); strategy/sustainability/path to scale; policy/advocacy connections; other. Also answer **“External Support. Which other programs have you applied to or received funding from for this work?”** (maximum 100 words). [Official LOI portal; archived exact-form summary]
+**“What are the three things that you hope to get out of the Fellowship?”** (required; select up to three) from: Funding to focus on my work; Connections to future funders and investors; Technical support or expert advice; Coaching and leadership development; Peer learning with a cohort; Access to Mozilla’s network of partners and collaborators; Visibility and platforms to share my work (e.g., media, speaking, MozFest); Help with strategy, sustainability, or a path to scale; Policy and advocacy connections; Other (specify). **External Support:** “Which other programs have you applied to or received funding from for this work?” (100 words; the RFP does not mark this field required). [Official RFP, Section 5]
 
 ### Relevant facts and evidence
 
@@ -154,25 +154,25 @@ List all other programs applied to or funding received for this work, with statu
 
 ### What Mozilla asks
 
-Fields: how the applicant heard about the program (choices include Bluesky, ChatGPT/Claude, email, Gemini/Google Search, Instagram, LinkedIn, web search, website, other); specify “Other”; optional referrer’s person/organization/network (form says referrals are not part of review criteria); social-media handles; anything else about the profile/application; and required AI and Translation Disclosure: yes/no to whether AI tools were used, and if yes, how. No word limits were visible in the captured form; confirm the live portal.
+Fields in the official RFP form: **“How did you hear about this opportunity?”** (select all that apply): Bluesky, Instagram, LinkedIn, Word of Mouth, Mozilla Foundation Staff Member, Mozilla Festival, Newsletter, Foundation, Website, Other. Then **“If there was a specific person, organization, and/or network that referred you, please let us know their name here.”** (text area, 50 characters). Required **AI and Translation Disclosure**: yes/no to “Were AI tools used to complete this application?”; if yes, “How were AI tools used in completing this application?” The RFP specifies no response-length limit for the source-selection field or conditional explanation. It lists no social-media-handle or “anything else” field in Section 6. [Official RFP, Section 6]
 
-The form’s AI policy permits support such as brainstorming, language clarification, and translation but says submitted content must reflect the applicant’s original work, ideas, and voice; tools should not generate full responses or replace personal input. [Official LOI portal; RFP AI-Use Policy]
+The form’s AI policy permits support such as brainstorming, language clarification, and translation but says submitted content must reflect the applicant’s original work, ideas, and voice; tools should not generate full responses or replace personal input. [Official RFP, AI-Use Policy and Section 6]
 
 ### Relevant facts and working content
 
 - AI tools have been used extensively in project development. Blaine originates objectives and problems, sets principles/constraints, directs architecture and priorities, evaluates results, catches errors, and accepts/rejects suggestions. AI has contributed code, technical explanations, alternatives, analysis, tests, and documentation. This division is supported across the KGI/PEIS records and their READMEs; it is not a claim that Blaine independently wrote every implementation detail.
 - This package is scaffolding for Blaine to rewrite. Do not submit its language unchanged. An honest disclosure can name the supportive uses here—evidence organization, brainstorming, terminology clarification, and drafting prompts—while making clear Blaine will supply and approve the substance and final wording.
-- Applicant must select how they actually heard of the program, supply any referrer and handles, and decide whether “anything else” adds necessary context. None can be inferred reliably from current material.
+- Applicant must select all truthful referral-source options, add a specific referrer if applicable (50 characters), and answer the AI-use question honestly. The exact limit for the conditional AI-use explanation is not specified in the RFP; keep it concise and confirm any live-portal limit.
 
 ## 7. Acknowledgements and Terms
 
 ### What Mozilla asks
 
-The captured form asks whether the applicant has engaged with Mozilla Foundation, MozFest, or anyone across the pan-Mozilla community; if yes, specify the involvement; check agreement that Mozilla may handle the applicant’s information as described in its Privacy Notice; and optionally opt in to future Mozilla Foundation emails. No word limits are shown. The indexed form snapshot did not show the previously mentioned aligned-funder-sharing option; verify the live form. [Official LOI portal]
+The official RFP asks: Mozilla Foundation regularly works with other funders/organizations supporting similar work. **“If your project could be a good match, would you like us to share the information you’ve provided with other funders?”** Yes/No. Selecting Yes permits sharing the application and contact information with peer funders and aligned organizations. It is explicitly optional and does not affect the Mozilla application. Submission terms also require checking agreement to Mozilla Foundation handling applicant information as explained in its Privacy Notice. No response limit applies to these selections. The RFP lists no previous-Mozilla-engagement question or future-email opt-in in Section 7. [Official RFP, Section 7]
 
 ### Relevant facts and applicant questions
 
-The archive contains no clear evidence of prior Mozilla/MozFest/community engagement. This is an evidence gap, not proof of no prior engagement. Blaine should answer from personal records. The privacy agreement and email subscription are personal choices and must not be preselected by this document.
+The aligned-funder sharing preference and privacy agreement are the applicant’s decisions; this document does not preselect either. Confirm the live portal has not changed these terms before submitting.
 
 ## Evidence map and guardrails
 
